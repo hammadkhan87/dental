@@ -516,10 +516,10 @@ export default function PrimarySearchAppBar({
           </form> */}
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
-            <Link className="right-side_btn" to="login">
+            <Link className="right-side_btn" to="/">
               <p>Home</p>
             </Link>
-            <Link className="right-side_btn" to="login">
+            <Link className="right-side_btn" to="/about">
               <Dropdown
                 menu={{
                   items,

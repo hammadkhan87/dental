@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-regular-svg-icons'
 import PrimarySearchAppBar from "./components/header/PrimarySearvhAppBar/PrimarySearchAppBar";
 import Home from "./pages/home/Home";
+import Footer from "./components/footer/Footer";
+import About from "./pages/about/About";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -33,9 +35,11 @@ function App() {
       
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
       </Routes>
 
       {/* Regular or light version of the tooth icon */}
+      <Footer/>
        </BrowserRouter>
   );
 }

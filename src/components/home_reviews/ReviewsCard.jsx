@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
 import "./style.scss"
 import AutoplayCarousel from '../AutoplayCarousel/AutoplayCarousel'
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import MultiItemCarousel from '../AutoplayCarousel/AutoplayCarousel';
 import {AiOutlineGoogle} from "react-icons/ai"
 import Videocards from './videocards/Videocards';
 import DentalTipsVideos from './dentaltipsvideos/DentalTipsVideos';
+import{ImYoutube} from "react-icons/im"
 export const ReviewsCard = () => {
     
       
@@ -42,6 +40,9 @@ export const ReviewsCard = () => {
     What Our Dentist has to Say
     </p>
     <DentalTipsVideos/>
+    <div className='rew_more_testimonial'><p className='rew_more_text1'>Check Out More Videos here
+</p><span className='rew_more_icon' style={{backgroundColor:"red"}}><ImYoutube/></span></div>
+
     </div>
     
     </div>

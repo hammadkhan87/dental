@@ -1,0 +1,29 @@
+.team_main_container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-top: 5%;
+    .team_title_1{
+
+            font-size: 18px;
+            font-weight: 800;
+            line-height: 14px;
+            color: #3b61b9;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 3px;
+    }
+    .team_title_2{
+        margin-top: 30px;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 40px;
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+    }
+    .team_cards_main_container{
+        display: flex;
+        margin-top: 2%;
+        justify-content: center;
+    }
+}

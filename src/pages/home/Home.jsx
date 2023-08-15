@@ -8,6 +8,7 @@ import HomeCardsB from "../../components/homecards2/HomeCardsB";
 import SaftyVideo from "../../components/saftyvideo/SaftyVideo";
 import OverSpeciality from "../../components/overspeciality/OverSpeciality";
 import { ReviewsCard } from "../../components/home_reviews/ReviewsCard";
+import ContactWithus from "../../components/contactwithus/ContactWithus";
 
 const Home = () => {
   return <div className="container">
@@ -19,7 +20,7 @@ const Home = () => {
     <SaftyVideo/>
     <OverSpeciality/>
     <ReviewsCard/>
-  
+    <ContactWithus/>
   </div>;
 };
 

@@ -1,0 +1,17 @@
+.main_title_page{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6%  10%;
+    background-image: linear-gradient(to right, #a34c85 , #f4a7b7);
+    .text_title{
+        font-size: 64px;
+        line-height: 64px;
+        font-weight: 700;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+}

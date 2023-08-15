@@ -1,0 +1,152 @@
+.trust_main_conatier{
+    background-color: #fcfcfc;
+    padding: 4% 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .trust_left_side_conatiner{
+        margin-left: 15px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        .trust_left_side_title1{
+            font-size: 16px;
+        font-weight: 800;
+        line-height: 14px;
+        color: #3b61b9;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 3px;
+        }
+        .trust_left_side_title2{
+            margin-top: 20px;
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 52px;
+            font-family: 'Montserrat', sans-serif;
+            color: black;
+        }
+        .trust_left_side_des{
+            margin-top: 20px;
+            margin-left: 20px;
+            font-family: 'Roboto', sans-serif;
+            line-height: 29px;
+            width: 70%;
+            font-size: 15px;
+            font-weight: 400;
+            color: #555555;
+        }
+    }
+    .trust_right_side_conatiner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        .trust_right_side_f_cards{
+            display: flex;
+            position: relative;
+            .card_f1{
+                // position: absolute;
+                //     bottom: 0px;
+                .trust_right_side_f_card1{
+                    // position: absolute;
+                    // bottom: 0px;
+                    width: 290px;
+                    display: flex;
+                    align-items: center;
+                    margin: 10px;
+                    flex-direction: column;
+                    padding:15% 11%;
+                    border-radius: 10px;
+                    background-color: white;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    
+                    .f_card1_title{
+                      font-size: 23px;
+                      line-height: 39px;
+                      font-weight: 700;
+                      font-family: 'Montserrat', sans-serif;
+    
+                    }
+                    .f_card1_dec{
+                        font-size: 15px;
+                        line-height: 29px;
+                        font-weight: 400;
+                        color: #555555;
+                        font-family: 'Roboto', sans-serif;
+    
+                    }
+                }
+            }
+            .card_f2{
+                margin-top: -55px;
+
+                // position: absolute;
+                    // bottom: 0px;
+                    .trust_right_side_f_card1{
+                        // position: absolute;
+                        // bottom: 0px;
+                        width: 290px;
+                        display: flex;
+                        align-items: center;
+                        margin: 10px;
+                        flex-direction: column;
+                        padding:15% 11%;
+                        border-radius: 10px;
+                        background-color: white;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                        
+                        .f_card1_title{
+                          font-size: 23px;
+                          line-height: 39px;
+                          font-weight: 700;
+                          font-family: 'Montserrat', sans-serif;
+        
+                        }
+                        .f_card1_dec{
+                            font-size: 15px;
+                            line-height: 29px;
+                            font-weight: 400;
+                            color: #555555;
+                            font-family: 'Roboto', sans-serif;
+        
+                        }
+                    }
+            }
+            .card_f3{
+
+                // position: absolute;
+                    // bottom: 0px;
+                    .trust_right_side_f_card1{
+                        // position: absolute;
+                        // bottom: 0px;
+                        width: 290px;
+                        display: flex;
+                        align-items: center;
+                        margin: 10px;
+                        flex-direction: column;
+                        padding:15% 11%;
+                        border-radius: 10px;
+                        background-color: white;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                        
+                        .f_card1_title{
+                          font-size: 23px;
+                          line-height: 39px;
+                          font-weight: 700;
+                          font-family: 'Montserrat', sans-serif;
+        
+                        }
+                        .f_card1_dec{
+                            font-size: 15px;
+                            line-height: 29px;
+                            font-weight: 400;
+                            color: #555555;
+                            font-family: 'Roboto', sans-serif;
+        
+                        }
+                    }
+            }
+            
+        }
+    }
+}

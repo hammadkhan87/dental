@@ -1,15 +1,18 @@
-import React, { useState } from "react";
-import "./style.scss";
+import React, { useState } from 'react'
+import "./style.scss"
 import { PlayIcon } from "../whychooseus/playbtn";
 import ReactPlayer from "react-player/youtube";
+import bgimg  from "../../images/2021-07-30-1-1.jpg"
 
-const SaftyVideo = () => {
-  const [show, setShow] = useState(false);
+const ClinicInteriorVideo = () => {
+    const [show, setShow] = useState(false);
   const [videoId, setVideoId] = useState(null);
   return (
-    <div className="video_main_cotainer">
-      <p className="saftyv_title">DENTAL HYGIENE & SAFETY VIDEO</p>
-      <div className="safty_video">
+    <div className='clinic_in_main_div'>
+        <p className='clinic_in_title'>Our Clinic Interior</p>
+        <div className='clinic_in_video'>
+
+        <div className="safty_video">
         {show ? (
           <>
             <ReactPlayer
@@ -25,14 +28,14 @@ const SaftyVideo = () => {
             <div
               className="videoItem"
               onClick={() => {
-                setVideoId("adGzcBs_p9g");
+                setVideoId("8Xv0K2RJ8eo");
                 setShow(true);
               }}
             >
               <div className="videoThumbnail">
                 <img
-                  src={`https://img.youtube.com/vi/adGzcBs_p9g/mqdefault.jpg`}
-                  alt="video_image"
+                  src={bgimg}
+                  alt='video_image'
                 />
                 <PlayIcon />
               </div>
@@ -40,8 +43,9 @@ const SaftyVideo = () => {
           </>
         )}
       </div>
+        </div>
     </div>
-  );
-};
+  )
+}
 
-export default SaftyVideo;
+export default ClinicInteriorVideo

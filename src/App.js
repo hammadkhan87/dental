@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-regular-svg-icons'
+import PrimarySearchAppBar from "./components/header/PrimarySearvhAppBar/PrimarySearchAppBar";
+import Home from "./pages/home/Home";
 
 function App() {
+  const [open, setOpen] = useState(false);
+  const [placement, setPlacement] = useState("left");
+  
+  const showDrawer = () => {
+    setOpen(true);
+  };
+  
+  const onClose = () => {
+    setOpen(false);
+  };
+  
+  const onChange = (e) => {
+    setPlacement(e.target.value);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <PrimarySearchAppBar
+        placement={placement}
+        onChange={onChange}
+        showDrawer={showDrawer}
+      />
+      
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+      </Routes>
+
+      {/* Regular or light version of the tooth icon */}
+       </BrowserRouter>
   );
 }
 

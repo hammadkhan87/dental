@@ -1,0 +1,87 @@
+.video_main_cotainer{
+    display: flex;
+    flex-direction: column;
+    padding: 3% 15%;
+    text-align: center;
+    .saftyv_title{
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 40px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: 10px;
+    }
+    .safty_video{
+        align-self: center;
+        margin-top: 10px;
+        height: 80vh;
+        width: 95%;
+         .videoItem {
+            // width: 150px;
+            flex-shrink: 0;
+            width: 100%;
+            height: 80vh;
+            // @include md {
+            //     width: 25%;
+            // }
+            cursor: pointer;
+            .videoThumbnail {
+                margin-bottom: 15px;
+                position: relative;
+                img {
+                    width: 100%;
+                    height:65vh;
+                    display: block;
+                    // border-radius: 12px;
+                    transition: all 0.7s ease-in-out;
+                }
+                svg {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100px;
+                    height: 100px;
+                }
+                .triangle {
+                    stroke-dasharray: 240;
+                    stroke-dashoffset: 480;
+                    stroke: white;
+                    transform: translateY(0);
+                    transition: all 0.7s ease-in-out;
+                }
+                .circle {
+                    stroke: white;
+                    stroke-dasharray: 650;
+                    stroke-dashoffset: 1300;
+                    transition: all 0.5s ease-in-out;
+                }
+                &:hover {
+                    // img {
+                    //     opacity: 0.5;
+                    // }
+                    .triangle {
+                        stroke-dashoffset: 0;
+                        opacity: 1;
+                        stroke: pink;
+                        animation: trailorPlay 0.7s ease-in-out;
+                    }
+                    .circle {
+                        stroke-dashoffset: 0;
+                        stroke:pink;
+                    }
+                }
+            }
+            .videoTitle {
+                color: white;
+                font-size: 14px;
+                line-height: 20px;
+                // @include md {
+                //     font-size: 16px;
+                //     line-height: 24px;
+                // }
+            }
+        }
+    }
+
+}

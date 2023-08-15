@@ -1,0 +1,157 @@
+.why_main_container{
+    margin: 20px 200px;
+    display: flex;
+    .left_side_whyus{
+      height: 80vh;
+      margin-top: 90px;
+      width: 250px;
+      border-radius: 5px;
+      background-image: url("../../images/AJ2I4524.jpg");
+      background-position: center center; /* Center both horizontally and vertically */
+      background-size: cover; 
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;     }
+      .right_side_whyus{
+        margin-top: 110px;
+        margin-left: 13% ;
+        width: 60%;
+
+        .right_side_inner_div{
+            display: flex;
+            flex-direction: column;
+            .first_title{
+                font-size: 16px;
+                font-weight: 800;
+                line-height: 14px;
+                color: #3b61b9;
+                font-family: 'Montserrat', sans-serif;
+                letter-spacing: 3px;
+
+            }
+            .right_side_second_title{
+                margin-top: 20px;
+                font-size: 60px;
+                font-weight: 700;
+                line-height: 52px;
+                font-family: 'Montserrat', sans-serif;
+                color: black;
+
+            }
+            .right_side_text_1{
+                margin-top: 20px;
+                font-family: 'Roboto', sans-serif;
+                line-height: 29px;
+                font-size: 17px;
+                font-weight: 500;
+                color: #555555;
+
+
+            }
+            .right_side_video_div{
+                margin-top: 20px;
+                width: 80%;
+                height: 42vh;
+                align-self: flex-end;       
+            }
+            .right_side_btn_div{
+                display: flex;
+                margin-top: 10px;
+                align-self: center;
+                align-items: center;
+                .hero_btn{
+                    text-align: center;
+                    padding: 20px 20px;
+                    border-radius: 10px;
+                    line-height: 16px;
+                    width: 180px;
+                    color: white;
+                    background-color: #3b61b9;
+                    font-family: 'Roboto', sans-serif;;
+                    font-weight: 600;
+                    font-size: 18px;
+        
+                }
+                .playbtn {
+
+                    display: flex;
+                    align-items: center;
+                    gap:20px;
+                    cursor: pointer;
+                    margin-left: 30px;
+                    svg {
+                        width: 60px;
+                        // @include md {
+                        //     width: 80px;
+                        // }
+                    }
+                    .text {
+                        font-size: 20px;
+                        transition: all 0.7s ease-in-out;
+                    }
+                    .triangle {
+                        stroke-dasharray: 240;
+                        stroke-dashoffset: 480;
+                        stroke: brown;
+                        transform: translateY(0);
+                        transition: all 0.7s ease-in-out;
+                    }
+                    .circle {
+                        stroke: brown;
+                        stroke-dasharray: 650;
+                        stroke-dashoffset: 1300;
+                        transition: all 0.5s ease-in-out;
+                    }
+                    &:hover {
+                        .text {
+                            color: palevioletred;
+                        }
+                        .triangle {
+                            stroke-dashoffset: 0;
+                            opacity: 1;
+                            stroke: palevioletred;
+                            animation: trailorPlay 0.7s ease-in-out;
+                        }
+                        .circle {
+                            stroke-dashoffset: 0;
+                            stroke: palevioletred;
+                        }
+                    }
+                }
+            }
+
+            .right_side_count_card_div{
+                display: flex;
+                align-self: end;
+                margin-top: 20px;
+
+                .inner_count_div{
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 10px;
+                    width: 200px;
+                    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+                      .count_text_1{
+                            font-size: 48px;
+                            font-weight: 600;
+                            font-family: 'Roboto', sans-serif;
+                            line-height: 64px;
+                            color: #3b61b9;
+
+                        }
+                        .count_text_2{
+                            margin-top: 10px;
+                            text-align: center;
+                            font-size: 22px;
+                            line-height: 37px;
+                            font-weight:600;
+                            font-family: 'Montserrat', sans-serif;
+
+                        }
+                    
+                }
+
+            }
+
+        }
+      }
+}

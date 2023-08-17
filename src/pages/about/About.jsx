@@ -6,6 +6,8 @@ import OverSpeciality from "../../components/overspeciality/OverSpeciality";
 import ClinicInteriorVideo from '../../components/clinicinterior/ClinicInteriorVideo';
 import WhyTrust from '../../components/WHY TRUST/WhyTrust';
 import Aimcards from '../../components/aboutAimCards/Aimcards';
+import AboutReviews from '../../components/about_reviews/AboutReviews';
+import Location from '../../components/maplocation/Location';
 
 
 const About = () => {
@@ -18,6 +20,8 @@ const About = () => {
     <ClinicInteriorVideo/>
     <WhyTrust/>
     <Aimcards/>
+    <AboutReviews/>
+    <Location/>
     
     </div>
   )

@@ -38,7 +38,7 @@ const WhyTrust = () => {
                 </div>
                  <div className='card_f3'>
                 <div className='trust_right_side_f_card1'>
-                    <p className='f_card1_title'>ENVIRONMENT & EQUIPMENT</p>
+                    <p className='f_card1_title'>EFFICIENT DOCTORS AND STAFF</p>
                     <p className='f_card1_dec'>The pillars of strength are our experienced dentist, technicians and support staffs who contribute 
                     to our success story. Without them neither our patients nor us can adorn the crown</p>
                 </div>

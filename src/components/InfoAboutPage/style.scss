@@ -1,0 +1,102 @@
+.info_main_container{
+    display: flex;
+    flex-direction: column;
+    padding: 4% 5%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    .info_min_title{
+        margin: 10px;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        font-weight: 800;
+        color: #3b61b9;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+    .info_sub_text{
+        font-size: 28px;
+        line-height: 28px;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 20px;
+
+    }
+    .info_s_doctors{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        .team_main_cards_container{
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            width: 170px;
+            height: 38vh;
+            align-items: center;
+            border-radius: 10px;
+            background-image: linear-gradient(to top right, #af4588, #f5a7b7);
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            img{
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                width: 100%;
+                height: 80%;
+            }
+            .team_card_name{
+                color: white;
+                cursor: pointer;
+                margin-top: 8px;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 39px;
+                font-family: 'Roboto', sans-serif;
+        
+        
+            }
+            .team_card_job{
+                margin-top: 1px;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 29px;
+                color: white;
+                font-family: 'Roboto', sans-serif;
+        
+            }
+        
+        }
+        
+    }
+
+    .right_icon_text{
+        margin-top: 15px;
+        display: flex;
+        cursor: pointer;
+        .r_map_icon{
+            font-size: 1.4rem;
+            color: #b35792;
+        }
+        .r_map_text{
+            color: #b35792;
+
+            margin-left: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .r_map_text:hover{        color: #f4a7b7
+        }
+        
+    }
+    .right_icon_text:hover{
+        .r_map_icon{
+        color: #f4a7b7;}
+    }    .r_map_text{
+        color: #f4a7b7
+    }
+  .info_end_video{
+    margin: 20px;
+    width: 85%;
+    height: 190px;
+  }
+}

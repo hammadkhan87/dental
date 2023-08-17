@@ -1,0 +1,126 @@
+.testi_cards_main_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 5%;
+    .testi_cards_inner_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        background-color: white;
+        border-radius: 10px;
+        padding: 3% 7%;
+
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        .rew_title_1{
+            font-size: 16px;
+            font-weight: 800;
+            line-height: 14px;
+            color: #3b61b9;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 2px;
+          }
+          .rew_title_2{
+            margin-top: 20px;
+            font-size: 46px;
+            font-weight: 700;
+            line-height: 52px;
+            font-family: 'Montserrat', sans-serif;
+            color: black;
+          }
+          .testi_cards{
+            margin: 20px 0px;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+          }
+
+          .rew_more_testimonial{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 7% 0;
+            .rew_more_text1{
+                line-height: 50px;
+                font-weight: 700;
+                font-size: 38px;
+                font-family: 'Montserrat', sans-serif;
+    
+            }
+            .rew_more_icon{
+                margin-left: 20px;
+                align-items: center;
+                padding: 0px 18px;
+                background-color: #3b61b9;
+                color: white;
+                border-radius: 10px;
+                font-size: 4.5rem;
+                cursor: pointer;
+            }
+    
+        } 
+        .test_video_section{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 20px;
+            .video_p_test{
+                width: 220px;
+                height: 130px;
+                margin-top: 5%;
+                margin-left: 7%;
+            }
+        }
+    }
+    .rew_title_2{
+        margin-top: 4%;
+        font-size: 46px;
+        font-weight: 700;
+        line-height: 52px;
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+      }
+      .testi_end_container{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: flex;
+        width: 80%;
+        align-items: center;
+        justify-content: space-around;
+        .t_end_card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .digit{
+                display: flex;
+                flex-direction: column;
+                .t_end_count{
+                    font-size: 30px;
+                    font-weight: 800;
+                    color: #61ce70;
+                    font-family: 'Roboto', sans-serif;;
+
+                }
+                .t_end_text{
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 34px;
+                    color: #014b71;
+                }
+                
+            }
+            .t_end_pic{
+               margin-left: 10px;
+                width: 75px;
+                height: 75px;
+                border: 1px dashed black;
+                border-radius: 50%;
+            }
+        }
+      }
+}

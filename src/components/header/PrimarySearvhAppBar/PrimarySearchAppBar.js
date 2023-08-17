@@ -10,6 +10,7 @@ import Badge from "@mui/material/Badge";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import { Button, Dropdown } from "antd";
+import { DownOutlined } from '@ant-design/icons';
 
 // import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
@@ -82,63 +83,47 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
   },
 }));
-const items2 = [
-  {
-    key: "1",
-    label: (
-      <Link
-        target="_blank"
-        rel="noopener noreferrer"
-        to="https://www.antgroup.com"
-      >
-        Dr Santosh
-      </Link>
-    ),
-  },
- 
- 
-];
 const items = [
   {
-    key: "1",
+    key: "3",
     label: (
       <Link
         target="_blank"
         rel="noopener noreferrer"
-        to="https://www.antgroup.com"
+        to="/Mouthbreathingblog"
       >
-        
-               Our Team
-
-                {/* <Button>bottom</Button> */}
-              
-        {/* Our Team */}
+        Mouth Breathing
       </Link>
     ),
-    item:[
-      {
-        key: "2",
-        label: (
-          <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            to="https://www.antgroup.com"
-          >
-            
-                   Our Team
-    
-                    {/* <Button>bottom</Button> */}
-                  
-            {/* Our Team */}
-          </Link>
-        ),
-      }
-    ]
-  },
- 
- 
-];
-
+  }]
+// const items = [
+//   {
+//     key: "1",
+//     label: (
+//       <Link
+//         target="_blank"
+//         rel="noopener noreferrer"
+//         to="https://www.antgroup.com"
+//       >
+//         Our Team
+//         {/* <Button>bottom</Button> */}
+//       </Link>
+//     ),
+//   },
+//   {
+//     key: "2",
+//     label: (
+//       <Link
+//         target="_blank"
+//         rel="noopener noreferrer"
+//         to="https://www.antgroup.com"
+//       >
+//         Dr Santosh
+//         {/* <Button>bottom</Button> */}
+//       </Link>
+//     ),
+//   },
+// ];
 
 export default function PrimarySearchAppBar({
   role,
@@ -520,7 +505,15 @@ export default function PrimarySearchAppBar({
               <p>Home</p>
             </Link>
             <Link className="right-side_btn" to="/about">
-              <Dropdown
+            <div className="dropdown">
+               <p className="dropbtn">About</p>
+                     <div className="dropdown-content">
+                      <Link to="/digital-implants-blog">Our Team </Link>
+                      <Link to="/Mouthbreathingblog">Dr Santosh</Link>
+                        
+                        </div>
+                        </div>
+              {/* <Dropdown
                 menu={{
                   items,
                 }}
@@ -528,18 +521,36 @@ export default function PrimarySearchAppBar({
                 arrow
               >
                 <p>About</p>
+              </Dropdown> */}
+            </Link>
+            <Link className="right-side_btn" to="/treatments">
+              {/* <p>Treatments</p> */}
+              <div className="dropdown">
+               <p className="dropbtn">Treatments</p>
+                     <div className="dropdown-content">
+                      <Link to="/generaldentistry">General Dentistry</Link>
+                      <Link to="/SmileMakeOver">Smile MakeOver</Link>
+                      <Link to="/DentalImplants">Dental Implants</Link>
 
-                {/* <Button>bottom</Button> */}
-              </Dropdown>
+                        
+                        </div>
+                        </div>
             </Link>
-            <Link className="right-side_btn" to="login">
-              <p>Treatments</p>
-            </Link>
-            <Link className="right-side_btn" to="login">
+            <Link className="right-side_btn" to="/testimonials">
               <p>Testimonials</p>
             </Link>
-            <Link className="right-side_btn" to="login">
-              <p>Blog</p>
+            <Link className="right-side_btn" to="/digital-implants-blog">
+             
+                <div className="dropdown">
+               <p className="dropbtn">Blog</p>
+                     <div className="dropdown-content">
+                      <Link to="/digital-implants-blog">Dental Implants </Link>
+                      <Link to="/Mouthbreathingblog">Mouth breathing</Link>
+                        
+                        </div>
+                        </div>
+              {/* <p>Blog</p> */}
+
             </Link>
             <Link className="right-side_btn" to="login">
               <p>Contact</p>

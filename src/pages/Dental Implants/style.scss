@@ -1,0 +1,82 @@
+.implant_main_container{
+    display: flex;
+    flex-direction: column;
+    background-color: #fcfcfc;
+
+    .imp_container_a{
+        padding: 4% 15%;
+        display: flex;
+        width: 100%;
+        .imp_left_side_container{
+            display: flex;
+            margin-left: 4%;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: center;
+            .imp_title{
+                    align-self: start;
+                   font-size: 52px;
+                   font-weight: 700;
+                   font-family: 'Montserrat', sans-serif;
+
+            }
+            .imp_img{
+                margin: 10%;
+                width:600px;
+                height: 50vh;
+                border-radius: 10px;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                img{
+                    border-radius: 10px;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .imp_detail_left_side{
+                margin-top: 5px;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 25px;
+                color: #555555;
+                font-family: 'Roboto', sans-serif;
+
+            }
+        }
+
+        .imp_right_side_container{
+            margin-left: 20px;
+            width: 40%;
+        }
+    }
+    .final_heading{
+        align-self: center;
+        margin: 3%;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 39px;
+        color: #3b61b9;
+        font-family: 'Montserrat', sans-serif;
+
+
+    }
+    .imp_final_btn{
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+        background-color: #3b61b9;
+        padding: 18px 25px;
+        width: 15%;
+        border-radius: 10px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 3%;
+        align-self: center;
+
+    }
+    .imp_final_container{
+        display: flex;
+        margin: 3% 0;
+        .imp_final_left{
+            width: 75%;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+.location_main_div{
+    background-color: #fcfcfc;
+    display: flex;
+    padding: 4% 10%;
+    justify-content: center;
+    margin: auto;
+    .left_map_location{
+        margin-right: 10px;
+    }
+    .right_side_location{
+        display: flex;
+        width: 350px;
+        margin-left: 10px;
+        flex-direction: column;
+        padding: 3%;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        .right_side_title1{
+            font-size: 16px;
+            font-weight: 800;
+            line-height: 14px;
+            color: #3b61b9;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 3px;
+        }
+        .right_side_title2{
+            margin-top: 20px;
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 52px;
+            font-family: 'Montserrat', sans-serif;
+            color: black;
+        }
+        .right_side_des{
+            margin-top: 20px;
+            font-family: 'Roboto', sans-serif;
+            line-height: 29px;
+            font-size: 15px;
+            font-weight: 400;
+            color: #555555;
+        }
+        .right_side_title3{
+            margin-top: 20px;
+            font-family: 'Roboto', sans-serif;
+            line-height: 29px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .right_icon_text{
+            margin-top: 15px;
+            display: flex;
+            cursor: pointer;
+            .r_map_icon{
+                font-size: 1.5rem;
+                color: #b35792;
+            }
+            .r_map_text{
+                color: #b35792;
+
+                margin-left: 10px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            
+        }
+        .right_icon_text:hover{
+            .r_map_icon{
+            color: #f4a7b7;}
+        }
+        .cntus_social_icons{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            .cntus_fb_icon{
+                cursor: pointer;
+                margin: 2px;
+                border-radius: 10px;
+                padding:12px 15px;
+            
+                color: white;
+                font-size: 1rem;
+            }
+            .cntus_fb_icon:hover{
+                opacity: 0.9;
+            }
+        }
+    }
+}

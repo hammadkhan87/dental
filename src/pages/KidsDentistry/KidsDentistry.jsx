@@ -1,50 +1,43 @@
-import React from "react";
-import Pagetitle from "../../components/pagetitle/Pagetitle";
-import imageaa from "../../images/woman-and-dentists-N5BXGZH-1.jpg";
-import "./style.scss";
-import InfoPage from "../../components/InfoAboutPage/InfoPage";
-import EndWhyUs from "../../components/EndWhyUs/EndWhyUs";
+import React from 'react'
 import drpic1 from "../../images/J2I1580_Square.jpg"
 import drpic2 from "../../images/Dr.jpg"
-import endpic from "../../images/J2I1580.jpg"
-const DentalImplants = () => {
+import endpic from "../../images/J2I1424-1024x711.jpg"
+import "../Dental Implants/style.scss"
+import imageaa from "../../images/J2I1436-1024x683.jpg";
+import Pagetitle from '../../components/pagetitle/Pagetitle'
+import InfoPage from '../../components/InfoAboutPage/InfoPage'
+import EndWhyUs from '../../components/EndWhyUs/EndWhyUs'
+
+const KidsDentistry = () => {
   return (
     <div className="implant_main_container">
-      <Pagetitle title="Dental Implants" />
+      <Pagetitle title="Kids Dentistry" />
       <div className="imp_container_a">
         <div className="imp_left_side_container">
-          <p className="imp_title">Dental Implants</p>
+          <p className="imp_title">Kids Dentistry</p>
           <div className="imp_img">
             <img src={imageaa} alt="" />
           </div>
           <p className="imp_detail_left_side">
-            We offer dental implants to patients who are eligible to avail this
-            procedure. These replacement tooth roots are created from titanium
-            alloys or titanium. It helps stimulate bone growth while preventing
-            bone resorption. It replaces your missing teeth the natural way and
-            restores function to allow you to bite, chew and eat food.
+          We are very much aware of the dental problems faced by children and the
+           challenges that dentists face while treating them. Hence, we have managed to develop a 
+           kid-friendly environment and have toys around. This way, your child will feel comfortable at our 
+           dental clinic and will look forwards to visit again for the next appointment.
           </p>
           <p className="imp_detail_left_side">
-            Our dental implants will provide you with lots of benefits like
-            improved speech, appearance, comfort, oral health, self-esteem and
-            easier eating. You can also find it convenient and enjoy having them
-            for a lifetime with good care.
+          We strongly recommend children to have bi-annual check-up to ensure they grow teeth properly 
+          and in the right shape. Our dental clinic will provide you with all the information that you wish to 
+          know about your child’s tooth. Whatever questions you have in mind will be answered by our expert dentists. 
+          We also suggest parents to maintain oral hygiene for their babies. This will ensure that your baby’s mouth is 
+          clear and clean of harmful germs.
+
+
           </p>
           <p className="imp_detail_left_side">
-            The cost involved in availing dental implants is based on the bone
-            quality and brand selected. We do offer top-quality, affordable
-            dental implantation procedure, enabling you to lead a normal life
-            and smile wide without any worry or inconvenience.
+          We do offer various types of preventive treatment for deciduous or milk teeth.
+
           </p>
-          <p className="imp_detail_left_side">
-            We also recommend you to quit or reduce smoking to avoid dental
-            implant failures. For the initial few days, you will experience some
-            swelling and pain in the region. We will suggest you with some pain
-            medication and therapies practicing which you will feel relief and
-            become normal quickly. The stitches used around the implant are
-            dissolvable. But if you feel uncomfortable, our dentists will have
-            it removed.
-          </p>
+         
           <p className="imp_detail_left_side">
             You should take proper care of your dental implants like that of
             your natural teeth. We suggest you to visit our clinic after every
@@ -112,7 +105,7 @@ const DentalImplants = () => {
           </p>
         </div>
         <div className="imp_right_side_container">
-          <InfoPage title="Dental Implants" drname1="Dr. Santosh Rathod" drname2="Dr. Vishnu Priya" dr1pic={drpic1} dr2pic={drpic2} videoid="K4qvMAxWWfQ"/>
+          <InfoPage title="Kids Dentistry" drname1="Dr. Santosh Rathod" drname2="Dr. Vishnu Priya" dr1pic={drpic1} dr2pic={drpic2} videoid="s1lbN53D3i8"/>
         </div>
       </div>
       <p className="final_heading">We Care for your teeth!</p>
@@ -121,10 +114,10 @@ const DentalImplants = () => {
         <div className="imp_final_left">
             <EndWhyUs/>
         </div>
-        <div className="imp_final_right"><img src={endpic} alt="" /></div>
+        <div className="imp_final_right"><img src={endpic} alt=""  /></div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default DentalImplants;
+export default KidsDentistry

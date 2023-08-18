@@ -15,6 +15,16 @@ import BlogMouthBreathing from "./pages/blog_Mouth_breathing/BlogMouthBreathing"
 import GeneralDentistry from "./pages/GENERAL DENTISTRY/GeneralDentistry";
 import SmileMakeOver from "./pages/SMILE MAKEOVER/SmileMakeOver";
 import DentalImplants from "./pages/Dental Implants/DentalImplants";
+import KidsDentistry from "./pages/KidsDentistry/KidsDentistry";
+import SedationDentistry from "./pages/Sedation Dentistry/SedationDentistry";
+import Dentures from "./pages/Dentures/Dentures";
+import DentalBridgesCrowns from "./pages/DentalBridgesCrowns/DentalBridgesCrowns";
+import { ClearAligners } from "./pages/ClearAlignersandInvisible Braces/ClearAligners";
+import OrthodonticTreatment from "./pages/OrthodonticTreatment/OrthodonticTreatment";
+import WisdomToothRemoval from "./pages/WisdomToothRemoval/WisdomToothRemoval";
+import RootCanal from "./pages/RootCanal/RootCanal";
+import OurTeam from "./pages/OurTeam/OurTeam";
+import SantoshProfile from "./pages/SantoshProfile/SantoshProfile";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -50,6 +60,16 @@ function App() {
         <Route exact path="/generaldentistry" element={<GeneralDentistry/>} />
         <Route exact path="/SmileMakeOver" element={<SmileMakeOver/>} />
         <Route exact path="/DentalImplants" element={<DentalImplants/>} />
+        <Route exact path="/KidsDentistry" element={<KidsDentistry/>} />
+        <Route exact path="/SedationDentistry" element={<SedationDentistry/>} />
+        <Route exact path="/Dentures" element={<Dentures/>} />
+        <Route exact path="/DentalBridgesandCrowns" element={<DentalBridgesCrowns/>} />
+        <Route exact path="/ClearAlignersandInvisibleBraces" element={<ClearAligners/>} />
+        <Route exact path="/OrthodonticTreatment" element={<OrthodonticTreatment/>} />
+        <Route exact path="/WisdomToothRemoval" element={<WisdomToothRemoval/>} />
+        <Route exact path="/RootCanal" element={<RootCanal/>} />
+        <Route exact path="/ourteam" element={<OurTeam/>} />
+        <Route exact path="/Santoshprofile" element={<SantoshProfile/>} />
       </Routes>
 
       {/* Regular or light version of the tooth icon */}

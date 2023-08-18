@@ -7,19 +7,19 @@ import{AiOutlineMail} from "react-icons/ai"
 import{BsFillCalendar2RangeFill} from "react-icons/bs"
 import{BiTimeFive} from "react-icons/bi"
 import ReactPlayer from "react-player/youtube"
-const InfoPage = () => {
+const InfoPage = ({title,drname1,drname2,dr1pic,dr2pic,videoid}) => {
   return (
     <div className='info_main_container'>
-        <p className='info_min_title'>Dental Implants</p>
+        <p className='info_min_title'>{title}</p>
         <p className='info_sub_text'>Specialists</p>
         <div className='info_s_doctors'>
         <div className='team_main_cards_container'>
-        <img src={profilepic} alt="" />
-        <p className='team_card_name'>Dr. Santosh Rathod</p>
+        <img src={dr1pic} alt="" />
+        <p className='team_card_name'>{drname1}</p>
         </div>
         <div className='team_main_cards_container'>
-        <img src={profilepic} alt="" />
-        <p className='team_card_name'>Dr. Vishnu Priya</p>
+        <img src={dr2pic} alt="" />
+        <p className='team_card_name'>{drname2}</p>
         </div>
         </div>
         <p className='info_sub_text' style={{marginTop:"30px"}}>Our Clinic</p>
@@ -77,7 +77,7 @@ const InfoPage = () => {
         </div>
         <div className='info_end_video'>
         <ReactPlayer
-                    url={`https://www.youtube.com/watch?v=PP9p_28bjso`}
+                    url={`https://www.youtube.com/watch?v=${videoid}`}
                     controls
                     width="100%"
                     height="100%"

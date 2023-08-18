@@ -508,8 +508,8 @@ export default function PrimarySearchAppBar({
             <div className="dropdown">
                <p className="dropbtn">About</p>
                      <div className="dropdown-content">
-                      <Link to="/digital-implants-blog">Our Team </Link>
-                      <Link to="/Mouthbreathingblog">Dr Santosh</Link>
+                      <Link to="/ourteam">Our Team </Link>
+                      <Link to="/Santoshprofile">Dr Santosh</Link>
                         
                         </div>
                         </div>
@@ -531,6 +531,14 @@ export default function PrimarySearchAppBar({
                       <Link to="/generaldentistry">General Dentistry</Link>
                       <Link to="/SmileMakeOver">Smile MakeOver</Link>
                       <Link to="/DentalImplants">Dental Implants</Link>
+                      <Link to="/KidsDentistry">Kids Dentistry</Link>
+                      <Link to="/SedationDentistry">Sedation Dentistry</Link>
+                      <Link to="/Dentures">Dentures</Link>
+                      <Link to="/DentalBridgesandCrowns">Dental Bridges / Crowns</Link>
+                      <Link to="/ClearAlignersandInvisibleBraces">Clear Aligners / Invisible Braces</Link>
+                      <Link to="/OrthodonticTreatment">Orthodontic Treatment</Link>
+                      <Link to="/WisdomToothRemoval">Wisdom Tooth Removal</Link>
+                      <Link to="/RootCanal">Root Canal</Link>
 
                         
                         </div>

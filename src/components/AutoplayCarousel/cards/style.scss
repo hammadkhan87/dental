@@ -1,15 +1,23 @@
+@import "../../../Styles/app.scss";
 .review-card {
+  display: flex;
+  flex-direction: column;
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     padding: 10px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
+    align-items: center;
+  
     .profile {
       display: flex;
       align-items: center;
+
       margin-bottom: 10px;
-  
+      @include tablet{
+        margin-bottom: 5px;
+      }
       img {
         width: 40px;
         height: 40px;
@@ -24,6 +32,9 @@
   
     .date {
       color: #888888;
+      @include tablet{
+        margin-bottom: 5px;
+      }
       margin-bottom: 8px;
     }
   
@@ -49,6 +60,9 @@
       margin-bottom: 5px;
       font-size: 14px;
       transition: all 0.20s ease-in;
+      @include tablet{
+          height: 50px;
+      }
 
   
       &.expanded {

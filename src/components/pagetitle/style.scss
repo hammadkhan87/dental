@@ -1,3 +1,4 @@
+@import "../../Styles/app.scss";
 .main_title_page{
     width: 100%;
     display: flex;
@@ -12,6 +13,9 @@
         text-align: center;
         color: white;
         font-family: 'Montserrat', sans-serif;
+        @include mobile{
+            font-size: 30px;
+        }
 
     }
 

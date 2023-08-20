@@ -6,7 +6,7 @@ import {LiaToothSolid} from "react-icons/lia"
 import {GiAchievement} from "react-icons/gi"
 const Aimcards = () => {
   return (
-    <div className='aim_cards_main_container'>
+    <div className='aim_cards_main_container_ac'>
         <AimCard 
         logo={<GiCircleSparks/>} 
         title={"VISION"} 

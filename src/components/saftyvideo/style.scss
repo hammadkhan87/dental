@@ -1,8 +1,14 @@
+@import"../../Styles/app.scss";
 .video_main_cotainer{
     display: flex;
     flex-direction: column;
     padding: 3% 15%;
     text-align: center;
+    @include xtablet{
+    padding: 5%;
+
+    }
+    
     .saftyv_title{
         font-weight: 800;
         font-size: 40px;
@@ -10,17 +16,26 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         margin: 10px;
+        @include tablet{
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 25px;
+        }
     }
     .safty_video{
         align-self: center;
         margin-top: 10px;
         height: 80vh;
         width: 95%;
+        @include mobile{
+            height: 25vh;
+
+        }
          .videoItem {
             // width: 150px;
             flex-shrink: 0;
             width: 100%;
-            height: 80vh;
+            height: 100%;
             // @include md {
             //     width: 25%;
             // }
@@ -28,9 +43,10 @@
             .videoThumbnail {
                 margin-bottom: 15px;
                 position: relative;
+                height: 100%;
                 img {
                     width: 100%;
-                    height:80vh;
+                    height:100%;
                     display: block;
                     // border-radius: 12px;
                     transition: all 0.7s ease-in-out;
@@ -42,6 +58,10 @@
                     transform: translate(-50%, -50%);
                     width: 100px;
                     height: 100px;
+                    @include mobile{
+                        width: 50px;
+                        height: 50px;
+                    }
                 }
                 .triangle {
                     stroke-dasharray: 240;

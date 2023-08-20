@@ -1,0 +1,211 @@
+.aptmt_main_container{
+    width: 100%;
+    padding: 5%;
+    background-image: linear-gradient(to top right, #af4588, #f5a7b7);
+    display: flex;
+    justify-content: center;
+    .aptmt_inner_card{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        padding: 4%;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        .aptmt_title1{
+            font-size: 14px;
+            font-weight: 800;
+            color: #08485e;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+        .aptmt_title2{
+            font-size: 50px;
+            line-height: 50px;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+        .aptmt_form{
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            .text_input{
+                margin: 5px 0px;
+                font-size: 16px;
+                list-style: 32px;
+                font-weight: 400;
+                color: #555555;
+                font-family: 'Roboto', sans-serif;
+
+            }
+            .amptmt_input{
+                width: 100%;
+                background-color: #fdb4d2;
+                height: 35px;
+                padding: 3px 8px;
+                border-radius: 7px;
+                font-size: 16px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 600;
+                color: #555555;
+            }
+            .amptmt_btn{
+                margin-top: 10px;
+                width: 100px;
+                text-align: center;
+                padding: 15px 20px;
+                font-size: 18px;
+                font-weight: 700;
+                color: white;
+                border-radius: 8px;
+                background-color: #3b61b9;
+                cursor: pointer;
+            }
+        }
+        .video_div_ampt{
+            width: 80%;
+            margin: 8% auto;
+            height: 50vh;
+            .videoItem {
+                // width: 150px;
+                flex-shrink: 0;
+                width: 100%;
+                height: 100%;
+                // @include md {
+                //     width: 25%;
+                // }
+                cursor: pointer;
+                .videoThumbnail {
+                    margin-bottom: 15px;
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        height:100%;
+                        display: block;
+                        // border-radius: 12px;
+                        transition: all 0.7s ease-in-out;
+                    }
+                    svg {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 100px;
+                        height: 100px;
+                    }
+                    .triangle {
+                        stroke-dasharray: 240;
+                        stroke-dashoffset: 480;
+                        stroke: white;
+                        transform: translateY(0);
+                        transition: all 0.7s ease-in-out;
+                    }
+                    .circle {
+                        stroke: white;
+                        stroke-dasharray: 650;
+                        stroke-dashoffset: 1300;
+                        transition: all 0.5s ease-in-out;
+                    }
+                    &:hover {
+                        // img {
+                        //     opacity: 0.5;
+                        // }
+                        .triangle {
+                            stroke-dashoffset: 0;
+                            opacity: 1;
+                            stroke: pink;
+                            animation: trailorPlay 0.7s ease-in-out;
+                        }
+                        .circle {
+                            stroke-dashoffset: 0;
+                            stroke:pink;
+                        }
+                    }
+                }
+                .videoTitle {
+                    color: white;
+                    font-size: 14px;
+                    line-height: 20px;
+                    // @include md {
+                    //     font-size: 16px;
+                    //     line-height: 24px;
+                    // }
+                }
+            }
+            
+        }
+        .right_side_btn_div{
+            display: flex;
+            margin-top: 10px;
+            align-self: center;
+            align-items: center;
+            .hero_btn{
+                
+                    text-decoration: none;
+                    text-align: center;
+                    padding: 20px 20px;
+                    border-radius: 10px;
+                    line-height: 16px;
+                    width: 180px;
+                    color: white;
+                    background-color: #3b61b9;
+                    font-family: 'Roboto', sans-serif;;
+                    font-weight: 600;
+                    font-size: 18px;
+        
+                
+               
+            }
+            .playbtn {
+
+                display: flex;
+                align-items: center;
+                gap:20px;
+                cursor: pointer;
+                margin-left: 30px;
+                svg {
+                    width: 60px;
+                    // @include md {
+                    //     width: 80px;
+                    // }
+                }
+                .text {
+                    font-size: 20px;
+                    transition: all 0.7s ease-in-out;
+                }
+                .triangle {
+                    stroke-dasharray: 240;
+                    stroke-dashoffset: 480;
+                    stroke: brown;
+                    transform: translateY(0);
+                    transition: all 0.7s ease-in-out;
+                }
+                .circle {
+                    stroke: brown;
+                    stroke-dasharray: 650;
+                    stroke-dashoffset: 1300;
+                    transition: all 0.5s ease-in-out;
+                }
+                &:hover {
+                    .text {
+                        color: palevioletred;
+                    }
+                    .triangle {
+                        stroke-dashoffset: 0;
+                        opacity: 1;
+                        stroke: palevioletred;
+                        animation: trailorPlay 0.7s ease-in-out;
+                    }
+                    .circle {
+                        stroke-dashoffset: 0;
+                        stroke: palevioletred;
+                    }
+                }
+            }
+        }
+    }
+
+}

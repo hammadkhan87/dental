@@ -1,7 +1,14 @@
+@import"../../Styles/app.scss";
 .aboutus_main_container{
     display: flex;
     padding: 0% 5%;
      padding-left: 7%;
+     width: auto;
+     justify-content: center;
+     @include tablet{
+     padding-left: 1%;
+     padding: 0% 1%;
+     }
     .left_side_whyus{
         height: 80vh;
         margin-top: 120px;
@@ -10,11 +17,22 @@
         background-image: url("../../images/J2I1580.jpg");
         background-position: center center; /* Center both horizontally and vertically */
         background-size: cover; 
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;     }
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;   
+    
+    @include tablet{
+        margin-top: 20px;
+        display: none;
+    }
+    }
         .right_side_whyus{
           margin-top: 110px;
           margin-left: 8% ;
           width: 60%;
+          @include tablet{
+            margin-top: 20px;
+            margin-left: 2%;
+            width: 90%;
+          }
   
           .right_side_inner_div{
               display: flex;
@@ -26,6 +44,7 @@
                   color: #3b61b9;
                   font-family: 'Montserrat', sans-serif;
                   letter-spacing: 3px;
+                 
   
               }
               .right_side_second_title{
@@ -35,6 +54,10 @@
                   line-height: 52px;
                   font-family: 'Montserrat', sans-serif;
                   color: black;
+                  @include tablet{
+                    font-size: 20px;
+                    line-height: 25px;
+                  }
   
               }
               .right_side_text_1{
@@ -44,14 +67,22 @@
                   font-size: 15px;
                   font-weight: 500;
                   color: #555555;
+                  @include tablet{
+                    font-size: 14px;
+                  }
   
   
               }
               .right_side_video_div{
                   margin-top: 20px;
-                  width: 80%;
+                  width: 60%;
                   height: 42vh;
-                  align-self: flex-end;       
+                  align-self: flex-end; 
+                  @include tablet{
+                    align-self: center;
+                    width: 90%;
+                    height: 25vh;
+                  }      
               }
               .right_side_btn_div{
                   display: flex;
@@ -59,6 +90,7 @@
                   align-self: center;
                   align-items: center;
                   .hero_btn{
+                    text-decoration: none;
                       text-align: center;
                       padding: 20px 20px;
                       border-radius: 10px;
@@ -69,6 +101,10 @@
                       font-family: 'Roboto', sans-serif;;
                       font-weight: 600;
                       font-size: 18px;
+                      @include tablet{
+                        font-size: 16px;
+                        padding: 10px 15px;
+                      }
           
                   }
                   .playbtn {

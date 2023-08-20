@@ -1,8 +1,12 @@
+@import "../../Styles/app.scss";
 .sp_main_container{
     background-color: #fcfcfc;
     padding: 4% 15%;
     display: flex;
     flex-direction: column;
+    @include tablet{
+     padding:3% 4% ;
+    }
     .sp_title_1{
         font-size: 18px;
         font-weight: 800;
@@ -10,6 +14,11 @@
         color: #3b61b9;
         font-family: 'Montserrat', sans-serif;
         letter-spacing: 3px;
+        @include tablet{
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
     }
     .sp_title_2{
         margin-left: 20px;
@@ -19,6 +28,12 @@
         line-height: 52px;
         font-family: 'Montserrat', sans-serif;
         color: black;
+        @include tablet{
+            margin-left: 10px;
+            margin-top: 10px;
+            font-size: 30px;
+            line-height: 30px;
+        }
 
     }
     .sp_des_1{
@@ -30,6 +45,10 @@
         font-size: 20px;
         font-weight: 500;
         color: #555555;
+        @include tablet{
+            width:80%;
+            font-size: 18px;
+        }
     }
     .sp_cards_main_container{
         margin-top: 1%;
@@ -38,6 +57,9 @@
         width: 100%;
         flex-wrap: wrap;
         justify-content: center;
+        @include tablet{
+            margin-left: 5px;
+        }
         .sp_card_1{
 
             display: flex;
@@ -48,6 +70,9 @@
             //  padding: 5px;
              width: 45%;
              box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+             @include tablet{
+                width: 90%;
+             }
              img{
                border-radius: 10px;
              }
@@ -59,7 +84,12 @@
                 line-height: 39px;
                 letter-spacing: 1px;
                 font-family: 'Montserrat', sans-serif;
-                
+                @include tablet{
+                    margin-top: 10px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 30px;
+                }
 
              }
              .sp_dec{
@@ -70,6 +100,11 @@
                 font-family: 'Roboto', sans-serif;
                 margin: 20px 30px;
                 color: #555555;
+                @include tablet{
+                    margin: 10px 5px;
+                    font-size:15px;
+
+                }
 
              }
 

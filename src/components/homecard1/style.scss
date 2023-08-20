@@ -1,19 +1,30 @@
-.home_cards_container{
+@import "../../Styles/app.scss";
+
+.home_cards_container_c{
     display: flex;
     width: 100%;
     height: 37vh;
     justify-content: center;
     background-color: #f7f5f5;
+    @include xtablet{
+        flex-wrap: wrap;
+        height: auto;
+    }
   
 
-    .main_card{
+    .main_card_a{
         width: 22%;
-        height: 100%;
+        height:100%;
         background-color:#fafafaa8;
         margin: 10px;
         border-radius: 7px;
         padding: 13px;
         z-index: 10;
+        @include xtablet{
+            width: 80%;
+             padding: 5px; 
+             height: 30vh;
+        }
     }
     .inner_div_card1{
         height: 100%;
@@ -26,6 +37,17 @@
         padding: 20px;
         border-radius: 10px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        @include mobile{
+            padding: 5px;
+
+        }
+        .icon_abc{
+            font-size: 5rem;
+            color: #ac4186;
+            @include mobile{
+                font-size: 3rem;
+            }
+        }
         p{
             line-height: 39px;
             margin-top: 20px;
@@ -33,6 +55,11 @@
             font-weight: 700;
             color:#ac4186;
             font-family: 'Montserrat', sans-serif;
+            @include mobile{
+                line-height: 29px;
+                font-size: 28px;
+                font-weight: 600;
+            }
         }
         span{
             margin-top: 18px;
@@ -41,17 +68,30 @@
             list-style: 27px;
             color: #252529;
             font-family: 'Roboto', sans-serif;;
-
+          @include mobile{
+            font-size: 15px;
+          }
         }
     }
-    .card_3{
+    .card_3_a{
         height: 52vh;
         z-index: 10;
         margin-top: -95px;
+        text-decoration: none;
+
         width: 400px;
         position: relative;
         bottom: 0px;
-        .inner_div_card3{
+        @include mobile{
+            height: auto;
+            margin-top: 10px;
+            width: 80%;
+            z-index: 2;
+          position: static ;
+            
+
+        }
+        .inner_div_card3_a{
             height: 100%;
         width: 100%;
         // background-color: red; /* For browsers that do not support gradients */
@@ -62,6 +102,10 @@
         padding: 20px;
         border-radius: 10px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        @include mobile{
+            padding: 10px;
+        }
+
         .icon_div{
             margin-top: 20px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -72,6 +116,11 @@
             color: white;
             align-items: center;
             justify-content: center;
+            @include mobile {
+                font-size: 3rem;
+                width: 180px;
+                height: 130px;
+            }
         }
         p{
             margin-top: 30px;
@@ -80,8 +129,12 @@
             font-weight: 700;
             color: #ffffff;
             font-family: 'Montserrat', sans-serif;
+            @include mobile{
+                font-size: 28px;
+                line-height: 29px;
+                margin-top: 15px;
 
-        }
+        }}
         span{
             margin-top: 30px;
             font-size: 21px;
@@ -89,7 +142,11 @@
             line-height: 29px;
             color: #ffffff;
             font-family: 'Roboto', sans-serif;;
-
+        @include mobile {
+            font-size: 18px;
+            line-height: 23px;
+            margin-top: 15px;
+        }
 
         }
 

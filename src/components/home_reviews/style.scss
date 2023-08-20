@@ -1,9 +1,13 @@
+@import "../../Styles/app.scss";
 .rew_main-contaner{
     background-color: #fcfcfc;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
+    @include tablet{
+      flex-wrap: wrap;
+    }
     .rew_inner_main_card{
       width: 75%;
       display: flex;
@@ -13,6 +17,10 @@
       align-items: center;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       padding: 3% 7%;
+   @include tablet{
+    width: 90%;
+    padding: 2% 5%;
+   }
       .rew_title_1{
         font-size: 18px;
         font-weight: 800;
@@ -29,6 +37,11 @@
         line-height: 52px;
         font-family: 'Montserrat', sans-serif;
         color: black;
+        @include tablet{
+          font-size: 25px;
+          margin-top: 10px;
+          line-height: 30px;
+        }
       }
 
     }
@@ -41,11 +54,20 @@
         justify-content: center;
         align-items: center;
         margin: 7% 0;
+        @include mobile{
+          flex-wrap: wrap;
+        }
+
         .rew_more_text1{
             line-height: 50px;
             font-weight: 700;
             font-size: 38px;
             font-family: 'Montserrat', sans-serif;
+            @include mobile{
+              font-size: 20px;
+              font-weight: 600;
+              line-height: 30px;
+            }
 
         }
         .rew_more_icon{
@@ -56,8 +78,20 @@
             color: white;
             border-radius: 10px;
             font-size: 4.5rem;
+            text-decoration: none;
             cursor: pointer;
+            @include mobile{
+              margin-left: 5px;
+              padding:0px 8px;
+              font-size: 2rem;
+            }
         }
 
     }  
+    .title_oo{
+      font-size: 46px;
+      @include tablet{
+        font-size: 20px;
+      }
+    }
 }

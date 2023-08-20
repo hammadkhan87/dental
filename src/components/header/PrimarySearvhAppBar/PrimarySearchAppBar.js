@@ -1,4 +1,11 @@
 import * as React from "react";
+import Button from '@mui/material/Button';
+import EditIcon from '@mui/icons-material/Edit';
+import Divider from '@mui/material/Divider';
+import ArchiveIcon from '@mui/icons-material/Archive';
+import FileCopyIcon from '@mui/icons-material/FileCopy';
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -9,24 +16,14 @@ import InputBase from "@mui/material/InputBase";
 import Badge from "@mui/material/Badge";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
-import { Button, Dropdown } from "antd";
-import { DownOutlined } from '@ant-design/icons';
-
+import {HiBars3} from "react-icons/hi2"
 // import MenuIcon from "@mui/icons-material/Menu";
-import SearchIcon from "@mui/icons-material/Search";
-import AccountCircle from "@mui/icons-material/AccountCircle";
-import MailIcon from "@mui/icons-material/Mail";
-import NotificationsIcon from "@mui/icons-material/Notifications";
-import MoreIcon from "@mui/icons-material/MoreVert";
 import "./style.scss";
 import { useState, useEffect } from "react";
 // import "./Navbar.scss";
-import { useNavigate } from "react-router-dom";
-import { GiHamburgerMenu } from "react-icons/gi";
+
 import { Link } from "react-router-dom";
-import { FaSearch } from "react-icons/fa";
 // import { Button } from "@mui/material";
-import { Radio, Space } from "antd";
 import Backdrop from "@mui/material/Backdrop";
 // import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
@@ -83,47 +80,47 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
   },
 }));
-const items = [
-  {
-    key: "3",
-    label: (
-      <Link
-        target="_blank"
-        rel="noopener noreferrer"
-        to="/Mouthbreathingblog"
-      >
-        Mouth Breathing
-      </Link>
-    ),
-  }]
-// const items = [
-//   {
-//     key: "1",
-//     label: (
-//       <Link
-//         target="_blank"
-//         rel="noopener noreferrer"
-//         to="https://www.antgroup.com"
-//       >
-//         Our Team
-//         {/* <Button>bottom</Button> */}
-//       </Link>
-//     ),
-//   },
-//   {
-//     key: "2",
-//     label: (
-//       <Link
-//         target="_blank"
-//         rel="noopener noreferrer"
-//         to="https://www.antgroup.com"
-//       >
-//         Dr Santosh
-//         {/* <Button>bottom</Button> */}
-//       </Link>
-//     ),
-//   },
-// ];
+
+const StyledMenu = styled((props) => (
+  <Menu
+    elevation={0}
+    anchorOrigin={{
+      vertical: 'bottom',
+      horizontal: 'right',
+    }}
+    transformOrigin={{
+      vertical: 'top',
+      horizontal: 'right',
+    }}
+    {...props}
+  />
+))(({ theme }) => ({
+  '& .MuiPaper-root': {
+    borderRadius: 6,
+    marginTop: theme.spacing(1),
+    minWidth: 180,
+    color:
+      theme.palette.mode === 'light' ? 'rgb(55, 65, 81)' : theme.palette.grey[300],
+    boxShadow:
+      'rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
+    '& .MuiMenu-list': {
+      padding: '4px 0',
+    },
+    '& .MuiMenuItem-root': {
+      '& .MuiSvgIcon-root': {
+        fontSize: 18,
+        color: theme.palette.text.secondary,
+        marginRight: theme.spacing(1.5),
+      },
+      '&:active': {
+        backgroundColor: alpha(
+          theme.palette.primary.main,
+          theme.palette.action.selectedOpacity,
+        ),
+      },
+    },
+  },
+}));
 
 export default function PrimarySearchAppBar({
   role,
@@ -132,11 +129,24 @@ export default function PrimarySearchAppBar({
   onChange,
   showDrawer,
 }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
   // const navigate = useNavigate();
 
-  const [search, setSearch] = useState("");
+  const [anchorEle, setAnchorEle] = React.useState(null);
+  const opena = Boolean(anchorEle);
+  const handleClicka = (event) => {
+    setAnchorEle(event.currentTarget);
+  };
+  const handleClosea = () => {
+    setAnchorEle(null);
+  };
+const [search, setSearch] = useState("");
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
     setOpen(true);
@@ -259,47 +269,110 @@ export default function PrimarySearchAppBar({
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <Link className="right-side_btn" to="selfstudy">
-          <IconButton>
-            <p>Self Study</p>
-          </IconButton>
+        <Link className="right-side_btn" to="/">
+            <p>Home</p>
         </Link>
       </MenuItem>
 
       <MenuItem>
-        <div onClick={handleOpen} className="right-side_btn" to="classroom">
-          <IconButton>
-            <p>Classroom</p>
-          </IconButton>
-        </div>
+        <Link  className="right-side_btn" to="/about">
+
+
+            
+      
+      <p>About</p>
+      </Link>
+      <div className={`dropdown ${isOpen ? 'open' : ''}`}>
+
+        <div className="arrow-icon"  onClick={toggleDropdown}>&#9660;</div>
+  
+      {isOpen && (
+        <ul className="dropdown-list">
+         <li>a</li>
+         <li>b</li>
+         <li>c</li>
+        </ul>
+      )}
+    </div>
+{/* 
+            <Button
+            
+        id="demo-customized-button"
+        aria-controls={opena ? 'demo-customized-menu' : undefined}
+        aria-haspopup="true"
+        aria-expanded={opena ? 'true' : undefined}
+        variant="contained"
+        disableElevation
+        onClick={handleClicka}
+        endIcon={<KeyboardArrowDownIcon />}
+      > */}
+       {/* About
+      </Button>
+      <StyledMenu
+        id="demo-customized-menu"
+        MenuListProps={{
+          'aria-labelledby': 'demo-customized-button',
+        }}
+        anchorEl={anchorEle}
+        open={opena}
+        onClose={handleClosea}
+      >
+        <MenuItem onClick={handleClosea} disableRipple>
+          <EditIcon />
+          Edit
+        </MenuItem>
+        <MenuItem onClick={handleClosea} disableRipple>
+          <FileCopyIcon />
+          Duplicate
+        </MenuItem>
+        <Divider sx={{ my: 0.5 }} />
+        <MenuItem onClick={handleClosea} disableRipple>
+          <ArchiveIcon />
+          Archive
+        </MenuItem>
+        <MenuItem onClick={handleClosea} disableRipple>
+          <MoreHorizIcon />
+          More
+        </MenuItem>
+      </StyledMenu> */}
+          
       </MenuItem>
 
-      {!isLogin && (
+      
         <MenuItem>
-          <Link className="right-side_btn" to="signup">
-            <IconButton>
-              <p>Join us</p>
-            </IconButton>
+          <Link className="right-side_btn" to="/treatments">
+              <p>Treatments</p>
           </Link>
         </MenuItem>
-      )}
-      {!isLogin && (
         <MenuItem>
-          <Link className="right-side_btn" to="login">
-            <IconButton>
-              <p>Sign in</p>
-            </IconButton>
+          <Link className="right-side_btn" to="/testimonials">
+              <p>Testimonials</p>
           </Link>
         </MenuItem>
-      )}
-
+        <MenuItem>
+          <Link className="right-side_btn" to="/digital-implants-blog">
+              <p>Blog</p>
+          </Link>
+        </MenuItem>
+        <MenuItem>
+          <Link className="right-side_btn" to="/contact">
+              <p>Contact</p>
+          </Link>
+        </MenuItem>
+        <MenuItem>
+          
+        <Link className="right_side_signup" to="/bookanappointment">
+                <p style={{ color: "white" }}>Book Appointment</p>
+            </Link>
+        </MenuItem>
+{/*       
       <MenuItem>
         <div className="right-side_btn" onCanPlay={handleOpen}>
           <IconButton>
             <p>Creat Quiz</p>
           </IconButton>
         </div>
-      </MenuItem>
+      </MenuItem> */}
     </Menu>
   );
 
@@ -337,7 +410,7 @@ export default function PrimarySearchAppBar({
             sx={{
               color: "black",
               marginRight: "20px",
-              display: { xs: "none", sm: "block", md: "block" },
+              display: { xs: "block", sm: "block", md: "block" },
             }}
           >
             <Link to="/">
@@ -360,15 +433,15 @@ export default function PrimarySearchAppBar({
           </Box>
           <Box
             sx={{
-              display: { xs: "none", sm: "none", md: "block" },
+              display: { xs: "none", sm: "none", md: "none", lg:"block" },
             }}
           >
             <Link
               sx={{
-                display: { xs: "none", sm: "none", md: "block" },
+                display: { xs: "none", sm: "none", md: "none" },
               }}
               className="right-side_btn"
-              to="selfstudy"
+              to="/"
             >
               <img src={textimg} style={{ width: "220px" }} />
               {/* <IconButton
@@ -560,21 +633,15 @@ export default function PrimarySearchAppBar({
               {/* <p>Blog</p> */}
 
             </Link>
-            <Link className="right-side_btn" to="login">
+            <Link className="right-side_btn" to="/contact">
               <p>Contact</p>
             </Link>
-
-            <Link className="right_side_signup" to="signup">
-              <IconButton>
+          
+            <Link className="right_side_signup" to="/bookanappointment">
                 <p style={{ color: "white" }}>Book Appointment</p>
-              </IconButton>
             </Link>
-
-            {isLogin && (
-              <IconButton onClick={HandleLogout} className="right-side_btn">
-                <p>Logout</p>
-              </IconButton>
-            )}
+    
+        
           </Box>
           <Box sx={{ color: "black", display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -585,7 +652,7 @@ export default function PrimarySearchAppBar({
               onClick={handleMobileMenuOpen}
               color="inherit"
             >
-              <MoreIcon />
+              <HiBars3 />
             </IconButton>
           </Box>
         </Toolbar>

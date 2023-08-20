@@ -25,6 +25,9 @@ import WisdomToothRemoval from "./pages/WisdomToothRemoval/WisdomToothRemoval";
 import RootCanal from "./pages/RootCanal/RootCanal";
 import OurTeam from "./pages/OurTeam/OurTeam";
 import SantoshProfile from "./pages/SantoshProfile/SantoshProfile";
+import Contact from "./pages/contact/Contact";
+import BookanAppointment from "./pages/BookanAppointment/BookanAppointment";
+import PageNotFound from "./pages/404pageNotFound/PageNotFound";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -70,10 +73,15 @@ function App() {
         <Route exact path="/RootCanal" element={<RootCanal/>} />
         <Route exact path="/ourteam" element={<OurTeam/>} />
         <Route exact path="/Santoshprofile" element={<SantoshProfile/>} />
+        <Route exact path="/contact" element={<Contact/>} />
+        <Route exact path="/bookanappointment" element={<BookanAppointment/>} />
+        <Route exact path="/*" element={<PageNotFound/>} />
+
       </Routes>
 
       {/* Regular or light version of the tooth icon */}
       <Footer/>
+
        </BrowserRouter>
   );
 }

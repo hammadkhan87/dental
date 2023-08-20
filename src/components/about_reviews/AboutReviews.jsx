@@ -7,7 +7,7 @@ const AboutReviews = () => {
   return (
     <div className='about_rew_main_container'>
 
-        <div className='about_rew_inner'>
+        <div className='about_rew_inner_ab'>
         <p className='rew_title_1'>
     PATIENT SPEAKS
 
@@ -25,15 +25,15 @@ const AboutReviews = () => {
     PATIENT SPEAKS
 
     </p>
-    <p className='rew_title_2' style={{fontSize:"46px"}}>
+    <p className='rew_title_2_c'>
     What They Speak
     </p>
    <Videocards/>
-   <p className='rew_title_1' style={{marginTop:"30px"}}>
+   <p className='rew_title_1'>
    DENTAL TIPS
 
     </p>
-    <p className='rew_title_2' style={{fontSize:"46px"}}>
+    <p className='rew_title_2_c'>
     What Our Dentist has to Say
     </p>
     <DentalTipsVideos/>

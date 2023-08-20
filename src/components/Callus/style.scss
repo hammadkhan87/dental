@@ -1,0 +1,56 @@
+.call_us_main_container{
+    width: 100%;
+    padding: 4%;
+    display: flex;
+    justify-content: center;
+    background-color: #fcfcfc;
+    .call_us_card{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        a{ 
+            display: flex;
+            flex-direction: column;
+             width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+        cursor: pointer;
+        width:37%;
+        padding: 3%;
+        height: 40vh;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        .vide_call_icon{
+            font-size: 5rem;
+            color: #ac4186;
+            transition: color 0.30s;
+        }
+        .call_us_title{
+            font-size: 23px;
+            line-height: 39px;
+            font-weight: 700;
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+        .call_us_sub_text{
+            font-size: 20px;
+            line-height: 29px;
+            font-weight: 700;
+            color: #54595f;
+            font-family: 'Roboto', sans-serif;
+
+        }
+    }
+    .call_us_card:hover{
+        .vide_call_icon{
+            color: #ffc4dc;
+        }
+    }
+
+}

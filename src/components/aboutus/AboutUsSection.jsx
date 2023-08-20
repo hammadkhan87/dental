@@ -3,6 +3,7 @@ import "./style.scss"
 import { PlayIcon } from '../whychooseus/playbtn'
 import ReactPlayer from "react-player/youtube";
 import VideoPopup from '../videoPopup/VideoPopup';
+import { Link } from 'react-router-dom';
 
 const AboutUsSection = () => {
     const [show, setShow] = useState(false);
@@ -46,7 +47,7 @@ const AboutUsSection = () => {
             />
           </div>
           <div className="right_side_btn_div">
-            <button className="hero_btn">Discover More</button>
+            <Link className="hero_btn" to="/">Discover More</Link>
 
             <div
               className="playbtn"

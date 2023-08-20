@@ -3,14 +3,14 @@ import "./style.scss";
 import { PlayIcon } from "./playbtn";
 import ReactPlayer from "react-player/youtube";
 import VideoPopup from "../videoPopup/VideoPopup";
-
+import { Link } from "react-router-dom";
 const WhyChooseUs = () => {
   const [show, setShow] = useState(false);
   const [videoId, setVideoId] = useState(null);
   return (
-    <div className="why_main_container">
-      <div className="left_side_whyus"></div>
-      <div className="right_side_whyus">
+    <div className="why_main_container_a">
+      <div className="left_side_whyus_a"></div>
+      <div className="right_side_whyus_a">
         <div className="right_side_inner_div">
           <p className="first_title">WHY CHOOSE US</p>
           <p className="right_side_second_title">
@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
             />
           </div>
           <div className="right_side_btn_div">
-            <button className="hero_btn">Discover More</button>
+            <Link className="hero_btn" to="/about">Discover More</Link>
 
             <div
               className="playbtn"

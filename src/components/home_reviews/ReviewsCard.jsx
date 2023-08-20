@@ -24,12 +24,12 @@ export const ReviewsCard = () => {
 
    <span className='rew_text_e'><b>Google</b> rating score : <b>4.9</b> of 5,based on <b> 103 reviews</b></span>
    
-   <div className='rew_more_testimonial'><p className='rew_more_text1'>Check Out More Testimonials here</p><span className='rew_more_icon'><AiOutlineGoogle/></span></div>
+   <div className='rew_more_testimonial'><p className='rew_more_text1'>Check Out More Testimonials here</p><a className='rew_more_icon' href='https://goo.gl/maps/jXfRZqqCZYwpLWuj7' target='_blank'><AiOutlineGoogle/></a></div>
    <p className='rew_title_1'>
     PATIENT SPEAKS
 
     </p>
-    <p className='rew_title_2' style={{fontSize:"46px"}}>
+    <p className='rew_title_2 title_oo'>
     What They Speak
     </p>
    <Videocards/>
@@ -37,12 +37,12 @@ export const ReviewsCard = () => {
    DENTAL TIPS
 
     </p>
-    <p className='rew_title_2' style={{fontSize:"46px"}}>
+    <p className='rew_title_2 title_oo'>
     What Our Dentist has to Say
     </p>
     <DentalTipsVideos/>
     <div className='rew_more_testimonial'><p className='rew_more_text1'>Check Out More Videos here
-</p><span className='rew_more_icon' style={{backgroundColor:"red"}}><ImYoutube/></span></div>
+</p><a className='rew_more_icon' style={{backgroundColor:"red"}} href='https://www.youtube.com/TheBunnyTeethLaserDentalClinic' target='_blank'><ImYoutube/></a></div>
 
     </div>
     

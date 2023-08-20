@@ -1,11 +1,16 @@
+@import"../../Styles/app.scss";
 .footer_main_container{
     display: flex;
+    width: 100%;
     flex-direction: column;
     padding: 5% 5%;  
     padding-bottom: 7%;
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(#ad4287, #f4a7b7);
+    @include mobile{
+        padding: 3%;
+    }
     .footer_title_1{
         margin-top: 2%;
         font-weight: 700;
@@ -13,6 +18,11 @@
         line-height: 52px;
         color: white;
         font-family: 'Montserrat', sans-serif;
+        @include tablet{
+            font-size: 30px;
+            line-height: 35px;
+        }
+
 
     }
     .cntus_social_icons{
@@ -28,6 +38,10 @@
         
             color: white;
             font-size: 1.8rem;
+            @include mobile{
+                font-size: 1.5rem;
+                padding: 5px 10px;
+            }
         }
         .cntus_fb_icon:hover{
             opacity: 0.9;
@@ -37,17 +51,34 @@
         display: flex;
         justify-content: center;
         margin-top: 3%;
+        flex-wrap: wrap;
+        width: 100%;
+        @include xtablet{
+            flex-wrap: wrap;
+        }
+      
         .footer_contact_card_1{
+            text-decoration: none;
             padding: 10px 20px;
             margin-left: 15px;
             border-radius: 10px;
-            width: 350px;
-            height: 200px;
+            width: 27%;
+            height: auto;
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: white;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            @include xtablet{
+                flex-wrap: wrap;
+            }
+            @include tablet{
+              flex-wrap: wrap;
+              width: 70%;
+              height: 170px;
+              margin:8px 0px ;
+              justify-content: center;
+            }
             .footer_card_icon_1{
                 padding: 11px 18px;
                 font-size: 2.4rem;
@@ -55,6 +86,10 @@
                 color: white;
                 background-color: #ad4287;
                 transition: all 0.20s ease-in-out;
+                @include mobile{
+                    font-size: 1.5rem;
+                    padding:5px 9px;
+                }
             }
             .footer_card_icon_1:hover{
                 cursor: pointer;
@@ -66,6 +101,10 @@
                 display: flex;
                 flex-direction: column;
                 margin-left: 10px;
+                @include mobile{
+                    width: 100%;
+                    justify-content: center;
+                }
                 .footer_card_title{
                     margin-left: 15px;
                     font-size: 28px;
@@ -74,6 +113,15 @@
                     color: #ad4287;
                     margin-bottom: 10px;
                     font-family: 'Roboto', sans-serif;;
+                    @include laptop{
+                        margin-left: 5px;
+                        margin-bottom: 5px;
+                    }
+                    @include mobile{
+                        font-size: 22px;
+                        line-height: 25px;
+                    
+                    }
 
                 }
                 .footer_card_title:hover{
@@ -84,8 +132,10 @@
                 .footer_sub_text{
                     margin-left: 10px;
                     font-size: 16px;
+                    width: auto;
                     padding: 0 5px;
                     font-weight: bold;
+                    color: black;
                 }
             }
             
@@ -104,6 +154,9 @@
     img{
         cursor: pointer;
        width: 50px;
+       @include mobile{
+        width: 20px;
+       }
     }
     p{
         margin-top: 10px;

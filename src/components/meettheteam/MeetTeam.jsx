@@ -7,7 +7,7 @@ import drpicc from "../../images/AJ2I4601.jpg"
 import drpicd from "../../images/AJ2I4586.jpg"
 const MeetTeam = () => {
   return (
-    <div className='team_main_container'>
+    <div className='team_main_container_b'>
       <p className='team_title_1'>MEET THE TEAM</p>
       <p className='team_title_2'>Awesome Dentist's</p>
       <div className='team_cards_main_container'>

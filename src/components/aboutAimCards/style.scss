@@ -1,6 +1,9 @@
-.aim_cards_main_container{
+.aim_cards_main_container_ac{
     display: flex;
     justify-content: center;
     padding: 4% 10%;
     background-image: linear-gradient(to right, #a34c85 , #f4a7b7);
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
 }

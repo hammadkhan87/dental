@@ -1,3 +1,4 @@
+@import "../../Styles/app.scss";
 .home_cards_container{
     display: flex;
     width: 100%;
@@ -6,6 +7,11 @@
     background-color: #f7f5f5;
      padding: 30px 0px;
 
+     @include tablet{
+        height: auto;
+       padding: 10px 0;
+       flex-wrap: wrap;
+     }
     .main_card{
         width: 25%;
         height: 100%;
@@ -13,6 +19,11 @@
         margin: 10px;
         border-radius: 7px;
         padding: 13px;
+        text-decoration: none;
+        @include mobile{
+            width: 90%;
+            padding: 5px;
+        }
     
     }
     .inner_div_card1{
@@ -33,7 +44,11 @@
             color: white;
             background-color: #ac4186;
             border-radius: 10px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;        }
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;     
+        @include mobile{
+            font-size: 2.5rem;
+        }
+        }
         .title_b{
             line-height: 39px;
             margin-top: 20px;
@@ -41,6 +56,10 @@
             font-weight: 800;
             color:black;
             font-family: 'Montserrat', sans-serif;
+            @include mobile{
+                font-size: 25px;
+                line-height: 28px;
+            }
         }
         .des_b{
             text-align: center;
@@ -50,6 +69,10 @@
             line-height: 27px;
             color: #343438;
             font-family: 'Roboto', sans-serif;;
+            @include mobile{
+                font-size: 16px;
+                line-height: 22px;
+            }
 
         }
     }

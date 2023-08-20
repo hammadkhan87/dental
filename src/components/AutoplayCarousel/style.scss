@@ -1,6 +1,16 @@
+@import"../../Styles/app.scss";
 .main_container_r{
     margin-top: 3%;
     display: flex;
     width: 100%;
-     flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+     .card_oo{
+        width: 30%;
+        margin: 7px;
+        @include tablet{
+            width: 80%;
+        }
+
+     }
 }

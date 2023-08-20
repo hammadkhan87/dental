@@ -1,11 +1,24 @@
+@import"../../Styles/app.scss";
 .location_main_div{
     background-color: #fcfcfc;
     display: flex;
     padding: 4% 10%;
     justify-content: center;
     margin: auto;
+    flex-wrap: wrap;
+    width: 100%;
+    @include tablet{
+        padding: 4% 1%;
+    }
     .left_map_location{
         margin-right: 10px;
+        width: 650px;
+        height: 650px;
+        @include tablet {
+            padding: 2%;
+            width: 95%;
+            height: 40vh;
+        }
     }
     .right_side_location{
         display: flex;
@@ -17,22 +30,22 @@
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         .right_side_title1{
             font-size: 16px;
-            font-weight: 800;
+            font-weight: 700;
             line-height: 14px;
             color: #3b61b9;
             font-family: 'Montserrat', sans-serif;
             letter-spacing: 3px;
         }
         .right_side_title2{
-            margin-top: 20px;
+            margin-top: 10px;
             font-size: 50px;
             font-weight: 700;
-            line-height: 52px;
+            line-height: 50px;
             font-family: 'Montserrat', sans-serif;
             color: black;
         }
         .right_side_des{
-            margin-top: 20px;
+            margin-top: 15px;
             font-family: 'Roboto', sans-serif;
             line-height: 29px;
             font-size: 15px;
@@ -40,14 +53,15 @@
             color: #555555;
         }
         .right_side_title3{
-            margin-top: 20px;
+            margin-top: 15px;
             font-family: 'Roboto', sans-serif;
             line-height: 29px;
             font-size: 16px;
             font-weight: bold;
         }
         .right_icon_text{
-            margin-top: 15px;
+            margin-top: 10px;
+            text-decoration: none;
             display: flex;
             cursor: pointer;
             .r_map_icon{
@@ -74,6 +88,7 @@
             margin-top: 20px;
             .cntus_fb_icon{
                 cursor: pointer;
+                text-decoration: none;
                 margin: 2px;
                 border-radius: 10px;
                 padding:12px 15px;

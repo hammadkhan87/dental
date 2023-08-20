@@ -1,14 +1,24 @@
+@import"../../Styles/app.scss";
 .trust_main_conatier{
     background-color: #fcfcfc;
     padding: 4% 15%;
     display: flex;
+    height: auto;
     justify-content: center;
     align-items: center;
+    @include xtablet{
+        flex-wrap: wrap;
+
+    }
     .trust_left_side_conatiner{
         margin-left: 15px;
         margin: 10px;
         display: flex;
         flex-direction: column;
+        @include tablet{
+            margin-left: 0px;
+            align-items: center;
+        }
         .trust_left_side_title1{
             font-size: 16px;
         font-weight: 800;
@@ -24,6 +34,10 @@
             line-height: 52px;
             font-family: 'Montserrat', sans-serif;
             color: black;
+            @include tablet{
+                font-size: 25px;
+                line-height: 30px;
+            }
         }
         .trust_left_side_des{
             margin-top: 20px;
@@ -34,6 +48,9 @@
             font-size: 15px;
             font-weight: 400;
             color: #555555;
+            @include tablet{
+                width: 100%;
+            }
         }
     }
     .trust_right_side_conatiner{
@@ -44,6 +61,10 @@
         .trust_right_side_f_cards{
             display: flex;
             position: relative;
+            @include xtablet{
+                flex-wrap: wrap;
+
+            }
             .card_f1{
                 // position: absolute;
                 //     bottom: 0px;
@@ -82,6 +103,9 @@
 
                 // position: absolute;
                     // bottom: 0px;
+                    @include tablet{
+                           margin-top: 10px; 
+                    }
                     .trust_right_side_f_card1{
                         // position: absolute;
                         // bottom: 0px;
@@ -94,6 +118,7 @@
                         border-radius: 10px;
                         background-color: white;
                         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                        
                         
                         .f_card1_title{
                           font-size: 23px;

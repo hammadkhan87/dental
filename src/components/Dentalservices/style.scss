@@ -1,4 +1,5 @@
-.dentalservices_main_container{
+@import "../../Styles/app.scss";
+.dentalservices_main_container_a{
     width: 100%;
     margin-top: 20px;
     padding:5% 10%;
@@ -13,6 +14,11 @@
          font-weight: 800;
          font-family: 'Montserrat', sans-serif;
          color: #fff;
+         @include tablet{
+         font-size: 25px;
+         font-weight: 700;
+         line-height: 30px;
+         }
     }
     .dentals_main_cards_div{
         // margin: 20px;
@@ -23,9 +29,13 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        @include tablet{
+            margin-top: 10px;
+        }
         .dentals_card{
             width: 370px;
             height: 47vh;
+            text-decoration: none;
             display: flex;
             text-align: center;
             justify-content: center;
@@ -37,31 +47,51 @@
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             transition: all .20s ease-in-out;
             cursor: pointer;
-            
+            @include tablet{
+                margin-top: 5px;
+                width: 95%;
+                height: auto;
+
+            }
             .dentals_card_icon{
                 font-size: 5.5rem;
                 color: #ad4287;
+                @include tablet {
+                   font-size:2.5rem;
+                }
             }
             
 
             .dentals_card_title{
+                color: black;
                 font-size: 30px;
                 font-weight: 700;
                 line-height: 50px;
                 letter-spacing: 2px;
                 text-transform: uppercase;
                 font-family: 'Montserrat', sans-serif;
+                @include tablet{
+                    font-size: 20px;
+                    line-height: 29px;
+                }
 
             }
             .dentals_card_description{
                 text-align: center;
                 font-size: 18px;
                 margin-top: 15px;
+                color: black;
                 line-height: 29px;
                 margin-bottom: 10px;
                 letter-spacing: 1px;
                 font-weight: 400;
                 font-family: 'Roboto', sans-serif;
+                @include mobile{
+                    letter-spacing: 0px;
+                    margin-top: 5px;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
 
             }
         }
@@ -71,6 +101,14 @@
             color: white;
             .dentals_card_icon{
                 color: #fff;
+            }
+            .dentals_card_description{
+                color: #fff;
+
+            }
+            .dentals_card_title{
+                color: #fff;
+
             }
         }
     }

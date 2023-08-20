@@ -1,7 +1,16 @@
-.why_main_container{
+@import"../../Styles/app.scss";
+.why_main_container_a{
     margin: 20px 200px;
     display: flex;
-    .left_side_whyus{
+     width: 100%;
+     height: auto;
+  @include xtablet{
+    height: auto;
+    flex-direction: column;
+    margin: 10px 20px;
+    justify-content: center;
+  }
+    .left_side_whyus_a{
       height: 80vh;
       margin-top: 90px;
       width: 250px;
@@ -9,15 +18,30 @@
       background-image: url("../../images/AJ2I4524.jpg");
       background-position: center center; /* Center both horizontally and vertically */
       background-size: cover; 
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;     }
-      .right_side_whyus{
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;   
+      @include xtablet{
+        margin-top: 20px;
+        height: 40vh;
+        display: none;
+
+      } 
+     }
+      
+      .right_side_whyus_a{
         margin-top: 110px;
-        margin-left: 13% ;
+        margin-left: 6% ;
         width: 60%;
+        @include tablet{
+            width: 85%;
+            margin-left: 10px;
+            margin-top: 30px;
+           height: auto;
+        }
 
         .right_side_inner_div{
             display: flex;
             flex-direction: column;
+            width: 100%;
             .first_title{
                 font-size: 16px;
                 font-weight: 800;
@@ -25,6 +49,7 @@
                 color: #3b61b9;
                 font-family: 'Montserrat', sans-serif;
                 letter-spacing: 3px;
+            
 
             }
             .right_side_second_title{
@@ -34,6 +59,10 @@
                 line-height: 52px;
                 font-family: 'Montserrat', sans-serif;
                 color: black;
+                @include tablet{
+                    font-size: 25px;
+                    line-height: 19px;
+                }
 
             }
             .right_side_text_1{
@@ -41,16 +70,26 @@
                 font-family: 'Roboto', sans-serif;
                 line-height: 29px;
                 font-size: 17px;
+                width: 80%;
                 font-weight: 500;
                 color: #555555;
+                @include tablet{
+                    line-height: 22px;
+                    font-size: 13px;
+                }
 
 
             }
             .right_side_video_div{
                 margin-top: 20px;
-                width: 80%;
+                width: 70%;
                 height: 42vh;
-                align-self: flex-end;       
+                align-self: flex-end;    
+                @include mobile {
+                    width: 90%;
+                    align-self: center;
+                    height: 20vh;
+                }   
             }
             .right_side_btn_div{
                 display: flex;
@@ -58,6 +97,7 @@
                 align-self: center;
                 align-items: center;
                 .hero_btn{
+                    text-decoration: none;
                     text-align: center;
                     padding: 20px 20px;
                     border-radius: 10px;
@@ -68,6 +108,12 @@
                     font-family: 'Roboto', sans-serif;;
                     font-weight: 600;
                     font-size: 18px;
+                    @include mobile{
+                        width: 150px;
+                        font-size: 15px;
+                        padding: 10px 5px;
+                        font-weight: 400;
+                    }
         
                 }
                 .playbtn {
@@ -77,15 +123,24 @@
                     gap:20px;
                     cursor: pointer;
                     margin-left: 30px;
+                    @include mobile{
+                        margin-left: 15px;
+                    }
                     svg {
                         width: 60px;
                         // @include md {
                         //     width: 80px;
                         // }
+                        @include mobile{
+                            width: 40px;
+                        }
                     }
                     .text {
                         font-size: 20px;
                         transition: all 0.7s ease-in-out;
+                        @include mobile{
+                            font-size: 15px;
+                        }
                     }
                     .triangle {
                         stroke-dasharray: 240;
@@ -122,7 +177,12 @@
                 display: flex;
                 align-self: end;
                 margin-top: 20px;
-
+                @include mobile{
+                    align-self: center;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                }
                 .inner_count_div{
                     align-items: center;
                     display: flex;
@@ -130,12 +190,19 @@
                     margin: 10px;
                     width: 200px;
                     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+                    @include mobile {
+                        width: 30%;
+                    }
                       .count_text_1{
                             font-size: 48px;
                             font-weight: 600;
                             font-family: 'Roboto', sans-serif;
                             line-height: 64px;
                             color: #3b61b9;
+                            @include mobile{
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
 
                         }
                         .count_text_2{
@@ -145,6 +212,10 @@
                             line-height: 37px;
                             font-weight:600;
                             font-family: 'Montserrat', sans-serif;
+                            @include mobile{
+                                font-size: 13px;
+                                line-height: 25px;
+                            }
 
                         }
                     

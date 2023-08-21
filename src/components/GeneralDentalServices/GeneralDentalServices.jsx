@@ -7,36 +7,38 @@ import{PiToothFill} from "react-icons/pi"
 import {FaSyringe} from"react-icons/fa6"
 import{FaTooth} from "react-icons/fa"
 import {GiToothbrush} from "react-icons/gi"
+import { Link } from 'react-router-dom'
+
 const GeneralDentalServices = () => {
   return (
     <div className='dentalservices_main_container'>
 
     <span className='dentals_title'>General Dental Services</span>
     <div className='dentals_main_cards_div'>
-        <div className='dentals_card'>
+        <Link to="/DentalBridgesandCrowns" className='dentals_card'>
             <span className='dentals_card_icon'><LiaToothSolid/></span>
             <span className='dentals_card_title'>BRIDGES & CROWN</span>
-        </div>
-        <div className='dentals_card'>
+        </Link>
+        <Link  to="/Dentures" className='dentals_card'>
             <span className='dentals_card_icon'><PiToothFill/></span>
             <span className='dentals_card_title'>DENTURES</span>
-        </div>
-        <div className='dentals_card'>
+        </Link>
+        <Link to="/OrthodonticTreatment" className='dentals_card'>
             <span className='dentals_card_icon'><FaSyringe/></span>
             <span className='dentals_card_title'>ORTHODONTIC TREATMENT</span>
-        </div>
-        <div className='dentals_card'>
+        </Link>
+        <Link to="/RootCanal"className='dentals_card'>
             <span className='dentals_card_icon'><GiTooth/></span>
             <span className='dentals_card_title'>ROOT CANAL</span>
-        </div>
-        <div className='dentals_card'>
+        </Link>
+        <Link to="/WisdomToothRemoval" className='dentals_card'>
             <span className='dentals_card_icon'><FaTooth/></span>
             <span className='dentals_card_title'>WISDOM TEETH REMOVEL</span>
-        </div>
-        <div className='dentals_card'>
+        </Link>
+        <Link className='dentals_card'>
             <span className='dentals_card_icon'><GiToothbrush/></span>
             <span className='dentals_card_title'>TEETH WHITENING</span>
-        </div>
+        </Link>
     </div>
 </div>
   )

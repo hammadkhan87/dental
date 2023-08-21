@@ -3,6 +3,7 @@ import "./style.scss";
 import profilepic from "../../images/J2I1580_Square-1024x1024.jpg";
 import {AiFillFacebook} from "react-icons/ai"
 import {AiOutlineInstagram} from "react-icons/ai"
+import { Link } from "react-router-dom";
 const SantoshProfile = () => {
   return (
     <div className="ss_p_main_container">
@@ -47,15 +48,15 @@ comprehensive dental care. She is also well-trained in the latest Advancements &
 
 
  </p>
-         <button className="ss_apt_btn">Get Appointment</button>
+         <Link to="/bookanappointment" className="ss_apt_btn">Get Appointment</Link>
         </div>
         <div className="sst_right_side">
           <div className="sst_p_pic">
             <img src={profilepic} alt="" />
           </div>
           <div className="sst_p_icons">
-            <span className="p_icon"><AiFillFacebook/></span>
-            <span className="p_icon"><AiOutlineInstagram/></span>
+            <a  href="https://www.facebook.com/santosh.kumari.7568/" target="_blank" className="p_icon"><AiFillFacebook/></a>
+            <a href="https://www.instagram.com/dr_santoshrathod_dentist/?utm_medium=copy_link" target="_blank" className="p_icon"><AiOutlineInstagram/></a>
           </div>
           <p className="sst_r_name">Dr. Santosh Kumari</p>
           <p className="sst_r_sub_text">LEAD DENTIST</p>

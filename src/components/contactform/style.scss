@@ -1,3 +1,4 @@
+@import"../../Styles/app.scss";
 .contact_main_p{
     display: flex;
     flex-direction: column;
@@ -10,11 +11,18 @@
         display: flex;
         border-radius: 10px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        @include tablet{
+            width: 95%;
+            flex-wrap: wrap;
+        }
         .contact_p_left_side{
             width: 55%;
             display: flex;
             flex-direction: column;
             padding: 0 3%;
+            @include tablet{
+                width: 100%;
+            }
             .contact_p_left_title1{
                 font-size: 14px;
                 margin-bottom: 10px;
@@ -31,6 +39,10 @@
                 line-height: 50px;
                 font-weight: 700;
                 font-family: 'Montserrat', sans-serif;
+                @include tablet{
+                    font-size: 25px;
+                    line-height: 32px;
+                }
 
              }
              .contact_form_left{
@@ -79,6 +91,9 @@
             flex-direction: column;
             margin-left: 2%;
             width: 35%;
+            @include tablet{
+                margin-top: 15px;
+                width: 100%;}
             .contact_p_right_title1{
                 font-size: 14px;
                 margin-bottom: 10px;
@@ -96,6 +111,10 @@
                 line-height: 50px;
                 font-weight: 700;
                 font-family: 'Montserrat', sans-serif;
+                @include tablet{
+                    font-size: 25px;
+                    line-height: 32px;
+                }
 
              }
              .contact_p_right_des{

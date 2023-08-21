@@ -1,3 +1,4 @@
+@import"../../Styles/app.scss";
 .contact_main_container{
 display: flex;
 flex-direction: column;
@@ -8,6 +9,10 @@ background-color: #fcfcfc;
     margin: 4% 0;
     width: 60%;
     height: 70vh;
+    @include tablet{
+        width: 85%;
+        height: 27vh;
+    }
     img{
         height: 100%;
         width: 100%;

@@ -1,3 +1,4 @@
+@import"../../Styles/app.scss";
 .team_main_container{
     display: flex;
     flex-direction: column;
@@ -20,6 +21,11 @@
         line-height: 40px;
         font-family: 'Montserrat', sans-serif;
         color: black;
+        @include tablet{
+            font-size: 25px;
+            line-height: 29px;
+        }
+
     }
     .team_cards_main_container{
         display: flex;

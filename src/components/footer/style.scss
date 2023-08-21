@@ -63,7 +63,7 @@
             margin-left: 15px;
             border-radius: 10px;
             width: 27%;
-            height: auto;
+            height: 27vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -71,6 +71,7 @@
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             @include xtablet{
                 flex-wrap: wrap;
+                height: auto;
             }
             @include tablet{
               flex-wrap: wrap;

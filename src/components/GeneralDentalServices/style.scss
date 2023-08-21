@@ -1,3 +1,4 @@
+@import"../../Styles/app.scss";
 .dentalservices_main_container{
     width: 100%;
     margin-top: 20px;
@@ -13,6 +14,10 @@
          font-weight: 800;
          font-family: 'Montserrat', sans-serif;
          color: #fff;
+         @include tablet{
+            font-size: 25px;
+            line-height: 32px;
+         }
     }
     .dentals_main_cards_div{
         // margin: 20px;
@@ -26,6 +31,7 @@
         .dentals_card{
             width: 350px;
             height: 35vh;
+            text-decoration: none;
             display: flex;
             text-align: center;
             justify-content: center;
@@ -36,11 +42,18 @@
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             transition: all .20s ease-in-out;
+            @include tablet{
+                width: 80%;
+                height: auto;
+            }
             cursor: pointer;
             
             .dentals_card_icon{
                 font-size: 4.5rem;
                 color: #ad4287;
+                @include tablet {
+                    font-size: 2rem;
+                }
             }
             
 
@@ -50,7 +63,12 @@
                 line-height: 45px;
                 letter-spacing: 2px;
                 text-transform: uppercase;
+                color: black;
                 font-family: 'Montserrat', sans-serif;
+               @include tablet{
+                font-size: 18px;
+                line-height: 25px;
+               }
 
             }
             .dentals_card_description{
@@ -62,6 +80,7 @@
                 letter-spacing: 1px;
                 font-weight: 400;
                 font-family: 'Roboto', sans-serif;
+                color: black;
 
             }
         }
@@ -70,6 +89,12 @@
             background-color: #bd5991;
             color: white;
             .dentals_card_icon{
+                color: #fff;
+            }
+            .dentals_card_title{
+                color: #fff;
+            }
+            .dentals_card_description{
                 color: #fff;
             }
         }

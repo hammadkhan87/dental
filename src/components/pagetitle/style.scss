@@ -6,6 +6,9 @@
     justify-content: center;
     padding: 4%  10%;
     background-image: linear-gradient(to right, #a34c85 , #f4a7b7);
+    @include tablet{
+        padding:4% 3% ;
+    }
     .text_title{
         font-size: 64px;
         line-height: 64px;
@@ -14,7 +17,9 @@
         color: white;
         font-family: 'Montserrat', sans-serif;
         @include mobile{
-            font-size: 30px;
+            font-size: 30px !important;
+            line-height: 30px !important;
+        
         }
 
     }

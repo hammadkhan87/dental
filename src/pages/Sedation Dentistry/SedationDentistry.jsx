@@ -7,6 +7,7 @@ import imageaa from "../../images/SleepDentistruy-3.jpg";
 import Pagetitle from '../../components/pagetitle/Pagetitle'
 import InfoPage from '../../components/InfoAboutPage/InfoPage'
 import EndWhyUs from '../../components/EndWhyUs/EndWhyUs'
+import { Link } from 'react-router-dom'
 const SedationDentistry = () => {
   return (
     <div className="implant_main_container">
@@ -98,7 +99,7 @@ const SedationDentistry = () => {
       </div>
     </div>
     <p className="final_heading">We Care for your teeth!</p>
-    <button className="imp_final_btn">Get Appointment</button>
+    <Link to="/bookanappointment" className="imp_final_btn">Get Appointment</Link>
     <div className="imp_final_container">
       <div className="imp_final_left">
           <EndWhyUs/>

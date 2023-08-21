@@ -6,7 +6,7 @@ import AppiontmentForm from '../../components/AppiontmentForm/AppiontmentForm'
 import EndInfo from './endinfopart/EndInfo'
 const BookanAppointment = () => {
   return (
-    <div>
+    <div className='dddd'>
         <Pagetitle title="Book an Appointment"/>
         <CallUs/>
         <AppiontmentForm/>

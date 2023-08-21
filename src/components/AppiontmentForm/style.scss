@@ -1,9 +1,13 @@
+@import"../../Styles/app.scss";
 .aptmt_main_container{
     width: 100%;
     padding: 5%;
     background-image: linear-gradient(to top right, #af4588, #f5a7b7);
     display: flex;
     justify-content: center;
+    @include tablet{
+        padding: 5% 2%;
+    }
     .aptmt_inner_card{
         display: flex;
         flex-direction: column;
@@ -12,6 +16,9 @@
         background-color: white;
         border-radius: 10px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        @include tablet{
+            width: 97%;
+        }
         .aptmt_title1{
             font-size: 14px;
             font-weight: 800;
@@ -24,6 +31,10 @@
             line-height: 50px;
             font-weight: 700;
             font-family: 'Montserrat', sans-serif;
+            @include tablet{
+                font-size: 25px;
+                line-height: 32px;
+            }
 
         }
         .aptmt_form{
@@ -67,6 +78,10 @@
             width: 80%;
             margin: 8% auto;
             height: 50vh;
+            @include tablet{
+                width: 87%;
+                height: 25vh;
+            }
             .videoItem {
                 // width: 150px;
                 flex-shrink: 0;
@@ -95,6 +110,10 @@
                         transform: translate(-50%, -50%);
                         width: 100px;
                         height: 100px;
+                        @include tablet{
+                            width :50px;
+                            height:50px;
+                        }
                     }
                     .triangle {
                         stroke-dasharray: 240;
@@ -155,7 +174,10 @@
                     font-family: 'Roboto', sans-serif;;
                     font-weight: 600;
                     font-size: 18px;
-        
+               @include tablet{
+                font-size: 16px;
+                margin:10px 15px;
+               }
                 
                
             }
@@ -171,10 +193,16 @@
                     // @include md {
                     //     width: 80px;
                     // }
+                    @include tablet{
+                        width: 40px;
+                    }
                 }
                 .text {
                     font-size: 20px;
                     transition: all 0.7s ease-in-out;
+                    @include tablet{
+                        font-size: 18px;
+                    }
                 }
                 .triangle {
                     stroke-dasharray: 240;

@@ -7,6 +7,8 @@ import imageaa from "../../images/wisdom-tooth_3.jpg";
 import Pagetitle from '../../components/pagetitle/Pagetitle'
 import InfoPage from '../../components/InfoAboutPage/InfoPage'
 import EndWhyUs from '../../components/EndWhyUs/EndWhyUs'
+import { Link } from 'react-router-dom'
+
 const WisdomToothRemoval = () => {
   return (
     <div className="implant_main_container">
@@ -38,7 +40,7 @@ const WisdomToothRemoval = () => {
       </div>
     </div>
     <p className="final_heading">We Care for your teeth!</p>
-    <button className="imp_final_btn">Get Appointment</button>
+    <Link to="/bookanappointment" className="imp_final_btn">Get Appointment</Link>
     <div className="imp_final_container">
       <div className="imp_final_left">
           <EndWhyUs/>

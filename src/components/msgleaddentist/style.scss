@@ -1,13 +1,21 @@
+@import"../../Styles/app.scss";
 .msg_main_container{
     display: flex;
     width: 100%;
     padding: 3% 15%;
     justify-content: center;
     align-items: center;
+    @include tablet{
+        flex-wrap: wrap;
+        padding: 3% ;
+    }
     .msg_left_side{
         display: flex;
         width: 50%;
         flex-direction:column;
+        @include tablet{
+            width: 90%;
+        }
         .msg_l_title1{
             margin: 10px 0px;
             font-size: 14px;
@@ -22,6 +30,12 @@
             font-weight: 700;
             width: 350px;
             line-height: 48px;
+            text-decoration: none;
+            @include tablet{
+                font-size: 25px;
+                width: auto;
+                line-height: 32px;
+            }
         }
         .msg_des{
             margin: 5px 0px;
@@ -39,6 +53,10 @@
         height: 70vh;
         border-radius: 10px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        @include tablet{
+            width: 90%;
+            height: 30vh;
+        }
         img{
             border-radius: 10px;
             width: 100%;

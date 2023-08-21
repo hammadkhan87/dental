@@ -52,9 +52,10 @@ const TestimonialCards = () => {
         </div>
         <div className="rew_more_testimonial">
           <p className="rew_more_text1">Check Out More Testimonials here</p>
-          <span className="rew_more_icon">
+          <a className="rew_more_icon" href="https://goo.gl/maps/nZV7f7zfeUGBuUnE8"
+            target="_blank">
             <AiOutlineGoogle />
-          </span>
+          </a>
         </div>
         <p className="rew_title_1">PATIENT SPEAKS</p>
         <p className="rew_title_2">What They Say About Us</p>
@@ -230,12 +231,14 @@ const TestimonialCards = () => {
         </div>
         <div className="rew_more_testimonial">
           <p className="rew_more_text1">Check Out More Videos here</p>
-          <span
+          <a
+          href="https://www.youtube.com/channel/UCBRE5bDuKzXacW1Xpk8hYxQ"
+          target="_blank"
             className="rew_more_icon"
             style={{ backgroundColor: "#cd201f" }}
           >
             <ImYoutube />
-          </span>
+          </a>
         </div>
       </div>
       <p className="rew_title_2">Our Success Story</p>

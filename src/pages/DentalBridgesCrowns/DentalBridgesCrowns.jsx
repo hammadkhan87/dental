@@ -7,6 +7,7 @@ import imageaa from "../../images/Crowns-Bridges-1024x768.jpeg";
 import Pagetitle from '../../components/pagetitle/Pagetitle'
 import InfoPage from '../../components/InfoAboutPage/InfoPage'
 import EndWhyUs from '../../components/EndWhyUs/EndWhyUs'
+import { Link } from 'react-router-dom'
 const DentalBridgesCrowns = () => {
   return (
 <div className="implant_main_container">
@@ -52,7 +53,7 @@ const DentalBridgesCrowns = () => {
         </div>
       </div>
       <p className="final_heading">We Care for your teeth!</p>
-      <button className="imp_final_btn">Get Appointment</button>
+      <Link to="/bookanappointment" className="imp_final_btn">Get Appointment</Link>
       <div className="imp_final_container">
         <div className="imp_final_left">
             <EndWhyUs/>
